@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Hello Deepak 
+          Hello Deepak :{process.env.REACT_APP_MY_API}
         </a>
       </header>
     </div>
