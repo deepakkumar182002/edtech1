@@ -1,25 +1,18 @@
-import logo from './logo.svg';
 import './App.css';
+import Carousel from './components/Carousel';
+import Navigation from './components/Navigation';
+
 
 function App() {
+  console.log(process.env.REACT_APP_MY_API)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Hello Deepak :{process.env.REACT_APP_MY_API}
-          Hello Alisha
-        </a>
-      </header>
-    </div>
+    <>
+      {/* <div className="container"> */}
+        <Navigation />
+        <Carousel />
+        
+      {/* </div> */}
+    </>
   );
 }
 
