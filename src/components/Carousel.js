@@ -2,7 +2,7 @@ import React from 'react'
 import poster1 from '../img/poster1.png'
 import poster2 from '../img/poster2.png'
 import poster3 from '../img/poster3.png'
-import Contents from './Contents'
+// import Contents from './Contents'
 import '../App.css'
 
 export default function Carousel() {
