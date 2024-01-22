@@ -45,7 +45,7 @@ export default function Carousel() {
                     </a>
                 </div>
             </div>
-            <Contents />
+            {/* <Contents /> */}
         </div>
     )
 }
