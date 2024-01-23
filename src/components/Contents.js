@@ -14,9 +14,31 @@ import card12 from "../img/card12.png"
 import card13 from "../img/card13.png"
 import profileimg from "../img/profileimg.png"
 import profileimg2 from "../img/profileimg2.png"
+import profileimg3 from "../img/profileimg3.png"
+import profileimg4 from "../img/profileimg4.png"
+import profileimg5 from "../img/profileimg5.png"
+import profileimg6 from "../img/profileimg6.png"
+import profileimg7 from "../img/profileimg7.png"
+import compony from "../img/compony.png"
+import compony2 from "../img/compony2.png"
+import compony3 from "../img/compony3.png"
+import compony4 from "../img/compony4.png"
+import compony5 from "../img/compony5.png"
+import compony6 from "../img/compony6.png"
+import social from "../img/social-medea.png"
 
 import "../App.css"
 import { NavLink } from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCircleChevronRight}from "@fortawesome/free-solid-svg-icons"
+// import { faSquareFacebook}from "@fortawesome/free-solid-svg-icons"
+// import { faSquareXTwitter}from "@fortawesome/free-solid-svg-icons"
+// import { faLinkedin}from "@fortawesome/free-solid-svg-icons"
+// import { faInstagram  }from "@fortawesome/free-solid-svg-icons"
+import Accordion from './Accordion';
+import { accordionData } from "./data";
+
+
 export default function Contents() {
     return (
         <>
@@ -220,40 +242,172 @@ export default function Contents() {
                     <p className='text-muted'>it is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia fugit dolorem velit impedit laudantium delectus aperiam eveniet culpa atque ea. a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 </div>
 
-                <div className="row justify-content-center">
-                    <div className="card" style={{ width: "25rem" }}>
-                        <div className="review-img d-flex justify-content-between m-3">
-                            <img src={card12} alt="" style={{ width: "2rem" }} />
-                            <img src={card13} alt="" />
+
+                {/* review cards and horizontal scroll */}
+                <div className="row m-auto" id='horizontall'>
+                    <div className="revers-forword">
+                        <FontAwesomeIcon style={{ fontSize: "2rem", color: "#289bde" }} icon={faCircleChevronRight} beat />
+                        <FontAwesomeIcon style={{ fontSize: "2rem", color: "#289bde" }} icon={faCircleChevronRight} beat />
+                    </div>
+                    <div className="scroll-container" >
+
+                        <div className="card m-1 animatecard" style={{ width: "26rem", height: "210px" }}>
+                            <div className="review-img d-flex justify-content-between m-3">
+                                <img src={card12} alt="" style={{ width: "2rem" }} />
+                                <img src={card13} alt="" />
+                            </div>
+                            <div className="card wraptext" m-1 style={{ outline: "none", border: "none" }}>
+                                <p className="text-muted p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, provident.</p>
+                                <div className="profile-img d-flex">
+                                    <img src={profileimg} alt="" />
+                                    <div className="text ml-2">
+                                        <h5 className="card-title " style={{ fontSize: "0.8rem" }}>Card title</h5>
+                                        <h6 className="card-subtitle mb-2 text-muted" style={{ fontSize: "0.8rem" }}>Card subtitle</h6>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div className="card-body">
-                            <p className="text-muted" style={{ fontSize: "0.8rem" }}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, blanditiis! Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div className="profile-img d-flex">
-                                <img src={profileimg} alt="" />
-                                <div className="text ml-2">
-                                    <h5 className="card-title " style={{ fontSize: "0.8rem" }}>Card title</h5>
-                                    <h6 className="card-subtitle mb-2 text-muted" style={{ fontSize: "0.8rem" }}>Card subtitle</h6>
+                        <div className="card m-1 animatecard" style={{ width: "26rem", height: "210px" }}>
+                            <div className="review-img d-flex justify-content-between m-3">
+                                <img src={card12} alt="" style={{ width: "2rem" }} />
+                                <img src={card13} alt="" />
+                            </div>
+                            <div className="card wraptext" m-1 style={{ outline: "none", border: "none" }}>
+                                <p className="text-muted p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, provident.</p>
+                                <div className="profile-img d-flex">
+                                    <img src={profileimg2} alt="" />
+                                    <div className="text ml-2">
+                                        <h5 className="card-title " style={{ fontSize: "0.8rem" }}>Card title</h5>
+                                        <h6 className="card-subtitle mb-2 text-muted" style={{ fontSize: "0.8rem" }}>Card subtitle</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card m-1 animatecard" style={{ width: "26rem", height: "210px" }}>
+                            <div className="review-img d-flex justify-content-between m-3">
+                                <img src={card12} alt="" style={{ width: "2rem" }} />
+                                <img src={card13} alt="" />
+                            </div>
+                            <div className="card wraptext" m-1 style={{ outline: "none", border: "none" }}>
+                                <p className="text-muted p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, provident.</p>
+                                <div className="profile-img d-flex">
+                                    <img src={profileimg3} alt="" />
+                                    <div className="text ml-2">
+                                        <h5 className="card-title " style={{ fontSize: "0.8rem" }}>Card title</h5>
+                                        <h6 className="card-subtitle mb-2 text-muted" style={{ fontSize: "0.8rem" }}>Card subtitle</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card m-1 animatecard" style={{ width: "26rem", height: "210px" }}>
+                            <div className="review-img d-flex justify-content-between m-3">
+                                <img src={card12} alt="" style={{ width: "2rem" }} />
+                                <img src={card13} alt="" />
+                            </div>
+                            <div className="card wraptext" m-1 style={{ outline: "none", border: "none" }}>
+                                <p className="text-muted p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, provident.</p>
+                                <div className="profile-img d-flex">
+                                    <img src={profileimg4} alt="" />
+                                    <div className="text ml-2">
+                                        <h5 className="card-title " style={{ fontSize: "0.8rem" }}>Card title</h5>
+                                        <h6 className="card-subtitle mb-2 text-muted" style={{ fontSize: "0.8rem" }}>Card subtitle</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card m-1 animatecard" style={{ width: "26rem", height: "210px" }}>
+                            <div className="review-img d-flex justify-content-between m-3">
+                                <img src={card12} alt="" style={{ width: "2rem" }} />
+                                <img src={card13} alt="" />
+                            </div>
+                            <div className="card wraptext" m-1 style={{ outline: "none", border: "none" }}>
+                                <p className="text-muted p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, provident.</p>
+                                <div className="profile-img d-flex">
+                                    <img src={profileimg5} alt="" />
+                                    <div className="text ml-2">
+                                        <h5 className="card-title " style={{ fontSize: "0.8rem" }}>Card title</h5>
+                                        <h6 className="card-subtitle mb-2 text-muted" style={{ fontSize: "0.8rem" }}>Card subtitle</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card m-1 animatecard" style={{ width: "26rem", height: "210px" }}>
+                            <div className="review-img d-flex justify-content-between m-3">
+                                <img src={card12} alt="" style={{ width: "2rem" }} />
+                                <img src={card13} alt="" />
+                            </div>
+                            <div className="card wraptext" m-1 style={{ outline: "none", border: "none" }}>
+                                <p className="text-muted p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, provident.</p>
+                                <div className="profile-img d-flex">
+                                    <img src={profileimg6} alt="" />
+                                    <div className="text ml-2">
+                                        <h5 className="card-title " style={{ fontSize: "0.8rem" }}>Card title</h5>
+                                        <h6 className="card-subtitle mb-2 text-muted" style={{ fontSize: "0.8rem" }}>Card subtitle</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="card m-1 animatecard" style={{ width: "26rem", height: "210px" }}>
+                            <div className="review-img d-flex justify-content-between m-3">
+                                <img src={card12} alt="" style={{ width: "2rem" }} />
+                                <img src={card13} alt="" />
+                            </div>
+                            <div className="card wraptext" m-1 style={{ outline: "none", border: "none" }}>
+                                <p className="text-muted p-1"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus, provident.</p>
+                                <div className="profile-img d-flex">
+                                    <img src={profileimg7} alt="" />
+                                    <div className="text ml-2">
+                                        <h5 className="card-title " style={{ fontSize: "0.8rem" }}>Card title</h5>
+                                        <h6 className="card-subtitle mb-2 text-muted" style={{ fontSize: "0.8rem" }}>Card subtitle</h6>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="card" style={{ width: "25rem" }}>
-                        <div className="review-img d-flex justify-content-between m-3">
-                            <img src={card12} alt="" style={{ width: "2rem" }} />
-                            <img src={card13} alt="" />
-                        </div>
-                        <div className="card-body">
-                            <p className="text-muted" style={{ fontSize: "0.8rem" }}> Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, blanditiis! Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <div className="profile-img d-flex">
-                                <img src={profileimg2} alt="" />
-                                <div className="text ml-2">
-                                    <h5 className="card-title " style={{ fontSize: "0.8rem" }}>Card title</h5>
-                                    <h6 className="card-subtitle mb-2 text-muted" style={{ fontSize: "0.8rem" }}>Card subtitle</h6>
-                                </div>
-                            </div>
-                        </div>
+                </div>{/* review cards and horizontal scroll */}
+
+                <div className="deadings my-5 text-center ">
+
+                    <h1>Frequently Asked Questions</h1>
+
+                    <p className='text-muted'>it is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia fugit dolorem velit impedit laudantium delectus aperiam eveniet culpa atque ea. a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                </div>
+                <div className="center-accordion" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+                    <div className="accourdion" >
+                        <ul className="accordion">
+                            {accordionData.map(({ heading, content }) => (
+                                <Accordion heading={heading} content={content} />
+                            ))}
+                        </ul>
                     </div>
                 </div>
+                <div className="deadings my-5 text-center ">
+
+                    <h1>Trusted by over 800+ componies</h1>
+                    <div className="componies-icons mt-5">
+                        <img src={compony} alt="" />
+                        <img src={compony2} alt="" />
+                        <img src={compony3} alt="" />
+                        <img src={compony4} alt="" />
+                        <img src={compony5} alt="" />
+                        <img src={compony6} alt="" />
+                    </div>
+                </div>
+                <footer className='text-center m-5' style={{background:"#272727", color:"#FFF", position:"relative",bottom:""}}>
+                    <h1 className='text p-3'>Ed Tech</h1>
+                    <p style={{color:"#fff", fontSize:"0.8rem"}} className='text'>Office41, Noida, Delhi, India Lorem ipsum dolor sit </p>
+                    <p style={{color:"#fff", fontSize:"0.8rem"}} className='text'>, India Lorem ipsum dolor sit amet </p>
+                    <p style={{color:"#fff", fontSize:"0.8rem"}} className='text'>Privacy Policy | Tearm of use</p>
+                    <div className="social-midia" style={{position:"relative", top:"-20px"}}>
+                        <img src={social} style={{scale:"30%"}}alt="" />
+                    {/* <FontAwesomeIcon icon={faSquareFacebook} />
+                    <FontAwesomeIcon icon={faSquareXTwitter} />
+                    <FontAwesomeIcon icon={faLinkedin} />
+                    <FontAwesomeIcon icon={faInstagram} /> */}
+                    </div>
+
+                </footer>
             </div>{/* main container end */}
         </>
     )

@@ -4,7 +4,7 @@ import {NavLink} from 'react-router-dom'
 import '../App.css'
 export default function Navigation() {
     return (
-        <div>
+        <>
             <div className="container">
 
                 <nav className="navbar navbar-expand-lg navbar-light bg-light" >
@@ -16,13 +16,13 @@ export default function Navigation() {
                     <div className="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
                         <ul className="navbar-nav mr-center mt-2 mt-lg-0" >
                             <li className="nav-item active mx-3">
-                                <NavLink className="nav-NavLink" to="/Carousels">Home <span className="sr-only">(current)</span></NavLink>
+                                <NavLink className="nav-NavLink"to="/Carousels" style={{color:"313131",textDecoration:"Underline"}}>Home <span className="sr-only">(current)</span></NavLink>
                             </li>
                             <li className="nav-item mx-3">
                                 <NavLink className="nav-NavLink" to="/contents">Courses</NavLink>
                             </li>
                             <li className="nav-item mx-3">
-                                <NavLink className="nav-NavLink" to="/">Deal</NavLink>
+                                <NavLink className="nav-NavLink" to="/contents">E-Learning</NavLink>
                             </li>
                             <li className="nav-item mx-3">
                                 <NavLink className="nav-NavLink" to="/">Success</NavLink>
@@ -32,14 +32,15 @@ export default function Navigation() {
                             </li>
                             <form className="form-inline my-2 my-lg-0">
                                 {/* <input className="form-control mr-sm-2" type="search" placeholder="Search"/> */}
-                                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
                             </form>
+                                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
 
                         </ul>
                     </div>
                 </nav>
+         
 
             </div>
-        </div>
+        </>
     )
 }

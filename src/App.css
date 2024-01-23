@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -10,6 +9,89 @@ body{
   background:rgb(248 249 250);
   overflow-x: hidden;
 }
+
+/* NavLink color and hover effect */
+li .nav-NavLink:active{
+  color: #313131;
+}
+li .nav-NavLink:hover{
+  opacity: 80%;
+}
+
+li .nav-NavLink{
+  color:#313131;
+  text-decoration:none;
+}
+::-webkit-scrollbar{
+  background: none;
+}
+#horizontall{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.revers-forword{
+  width: 80%;
+  position: relative;
+  height: auto;
+  display: flex;
+  align-items: center;
+  top: 120px;
+  z-index: 2;
+  justify-content: space-between;
+
+}
+.scroll-container{
+  z-index: 1;
+  width: 76%;
+  height: auto;
+  position: relative;
+  overflow-x: auto;
+  flex-wrap: nowrap;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.animatecard{
+  animation: run 10s infinite ease;
+  display: inline-block;
+  
+}
+@keyframes run {
+  
+  10%{
+    transform: translateX(0px);
+  }
+  25%{
+    transform: translateX(-250px);
+  }
+  50%{
+    transform: translateX(-500px);
+  }
+  75%{
+    transform: translateX(-500px);
+  }
+  100%{
+    transform: translateX(-250px);
+  }
+
+  
+}
+/* wraptext for all review cards */
+.wraptext{
+  border: 1px solid gray;
+  display: flex;
+  position: relative;
+  white-space: wrap;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  widows: 26rem;
+  padding: 5px;
+}
+
+
 
 @media screen and (max-width: 760px) {
   /* .card{
@@ -27,4 +109,35 @@ body{
   .getstarted{
       font-size: 30px;
   }
+}
+
+
+.accordion {
+  max-width: 768px;
+}
+.accordion-item {
+  list-style: none;
+}
+.accordion-toggle {
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #f2f1f1;
+  padding: 1em;
+}
+.accordion-toggle:hover {
+  background-color: #e7f1f5;
+}
+.accordion-toggle h3 {
+  margin: 0;
+}
+.accordion-content {
+  background-color: rgb(248 249 250);
+  padding: 1em;
+}
+
+/* componies icons */
+.componies-icons img{
+  scale: 70%;
 }
