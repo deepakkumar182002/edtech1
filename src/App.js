@@ -16,8 +16,8 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<Navigation />}/> */}
           <Route index element={<Navigation />} />
-          <Route path="Carousels" element={<Carousel />} />
-          <Route path="contents" element={<Contents />} />
+          <Route path="/Carousels" element={<Carousel />} />
+          <Route path="/contents" element={<Contents />} />
           {/* <Route path="*" element={<NoPage />} /> */}
       </Routes>
     </BrowserRouter>
