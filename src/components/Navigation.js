@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../img/logo.jpg'
+import {Link} from 'react-router-dom'
 import '../App.css'
 export default function Navigation() {
     // const logo = '/edtech/public/logo.jpg'
@@ -8,7 +9,7 @@ export default function Navigation() {
             <div className="container">
 
                 <nav className="navbar navbar-expand-lg navbar-light bg-light" >
-                    <a className="navbar-brand fs-2" href="#"><img src={logo} height={40} width={40} alt="" />Logo.</a>
+                    <Link className="navbar-brand fs-2" to="/"><img src={logo} height={40} width={40} alt="" />Logo.</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
@@ -18,19 +19,19 @@ export default function Navigation() {
                         <ul className="navbar-nav mr-center mt-2 mt-lg-0" >
                             {/* <ul className="navbar-nav mr-center mt-2 mt-lg-0" > */}
                             <li className="nav-item active mx-3">
-                                <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <a className="nav-link" href="#">Courses</a>
+                                <Link className="nav-link" to="/">Courses</Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <a className="nav-link" href="#">Deal</a>
+                                <Link className="nav-link" to="/">Deal</Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <a className="nav-link" href="#">Success</a>
+                                <Link className="nav-link" to="/">Success</Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <a className="nav-link" href="#">Contact</a>
+                                <Link className="nav-link" to="/">Contact</Link>
                             </li>
                             <form className="form-inline my-2 my-lg-0">
                                 {/* <input className="form-control mr-sm-2" type="search" placeholder="Search"/> */}
