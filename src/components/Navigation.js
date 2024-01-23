@@ -19,10 +19,10 @@ export default function Navigation() {
                         <ul className="navbar-nav mr-center mt-2 mt-lg-0" >
                             {/* <ul className="navbar-nav mr-center mt-2 mt-lg-0" > */}
                             <li className="nav-item active mx-3">
-                                <Link className="nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
+                                <Link className="nav-link" to="/Carousels">Home <span className="sr-only">(current)</span></Link>
                             </li>
                             <li className="nav-item mx-3">
-                                <Link className="nav-link" to="/">Courses</Link>
+                                <Link className="nav-link" to="/contents">Courses</Link>
                             </li>
                             <li className="nav-item mx-3">
                                 <Link className="nav-link" to="/">Deal</Link>
