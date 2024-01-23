@@ -16,7 +16,7 @@ import profileimg from "../img/profileimg.png"
 import profileimg2 from "../img/profileimg2.png"
 
 import "../App.css"
-import { Link } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 export default function Contents() {
     return (
         <>
@@ -168,7 +168,7 @@ export default function Contents() {
                     </div>
                     <div className="row m-2">
                         <div className='col mt-5'>
-                            <Link to="/" className="btn btn-primary" style={{ background: "#fff", color: "#0096FF", display: "flex", justifyContent: "center" }}>Register Now</Link>
+                            <NavLink to="/" className="btn btn-primary" style={{ background: "#fff", color: "#0096FF", display: "flex", justifyContent: "center" }}>Register Now</NavLink>
                         </div>
                     </div>
                 </div>
@@ -184,7 +184,7 @@ export default function Contents() {
                         <div className="card-body">
                             <h5 className="card-title">Alina </h5>
                             <p className='text-muted'>UX Designer</p>
-                            <Link to="/" className="btn btn-primary">Profile</Link>
+                            <NavLink to="/" className="btn btn-primary">Profile</NavLink>
                         </div>
                     </div>
                     <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
@@ -192,7 +192,7 @@ export default function Contents() {
                         <div className="card-body">
                             <h5 className="card-title">Christy</h5>
                             <p className='text-muted'>Mearn Stack Developer </p>
-                            <Link to="/" className="btn btn-primary">Profile</Link>
+                            <NavLink to="/" className="btn btn-primary">Profile</NavLink>
                         </div>
                     </div>
                     <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
@@ -200,7 +200,7 @@ export default function Contents() {
                         <div className="card-body">
                             <h5 className="card-title">Deniels</h5>
                             <p className='text-muted'>Graphics Designer</p>
-                            {/* <a to="/" className="btn btn-primary">Profile</a> */}
+                            <NavLink to="/" className="btn btn-primary">Profile</NavLink>
                         </div>
                     </div>
                     <div className="card m-1 mb-1" style={{ maxWidth: "17rem" }}>
@@ -208,7 +208,7 @@ export default function Contents() {
                         <div className="card-body">
                             <h5 className="card-title">Harward </h5>
                             <p className='text-muted'>Full Stack Developer</p>
-                            <Link to="/" className="btn btn-primary">Profile</Link>
+                            <NavLink to="/" className="btn btn-primary">Profile</NavLink>
                         </div>
                     </div>
                 </div>

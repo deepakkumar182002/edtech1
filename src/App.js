@@ -2,7 +2,7 @@ import './App.css';
 import Carousel from './components/Carousel';
 import Navigation from './components/Navigation';
 import Contents from './components/Contents';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   console.log(process.env.REACT_APP_MY_API)
