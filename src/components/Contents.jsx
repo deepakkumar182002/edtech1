@@ -31,8 +31,8 @@ import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronRight}from "@fortawesome/free-solid-svg-icons"
 import { FaLinkedin, FaInstagram, FaSquareXTwitter,FaSquareFacebook } from "react-icons/fa6";
+import { AccordionData } from './Data'
 import Accordion from './Accordion';
-import {AccordionData} from './Data'
 
 
 
@@ -47,8 +47,8 @@ export default function Contents() {
 
                 </div>
 
-                {/* ############  1  ############# */}
-                <div className="row align-items-start">
+                
+                <div className="row align-items-start justify-content-center">
                     <div className="card mb-3 m-1" style={{ maxWidth: "540px" }}>
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
@@ -78,8 +78,8 @@ export default function Contents() {
                         </div>
                     </div>
                 </div>
-                {/* ############  2  ############# */}
-                <div className="row align-items-start">
+               
+                <div className="row align-items-start justify-content-center">
                     <div className="card mb-3 m-1" style={{ maxWidth: "540px" }}>
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
@@ -110,8 +110,8 @@ export default function Contents() {
                     </div>
                 </div>
 
-                {/* ############  3  ############# */}
-                <div className="row align-items-start">
+              
+                <div className="row align-items-start justify-content-center">
                     <div className="card mb-3 m-1" style={{ maxWidth: "540px" }}>
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
@@ -174,8 +174,8 @@ export default function Contents() {
 
                         </div>
                     </div>
-                </div>{/* learning car end */}
-                {/* </div> cards container end */}
+                </div>
+                
                 <br />
                 <br />
                 <div className="row justify-content-center" style={{ background: "#289bde", color: "#fff" }}>
@@ -240,7 +240,7 @@ export default function Contents() {
                 </div>
 
 
-                {/* review cards and horizontal scroll */}
+                
                 <div className="row m-auto" id='horizontall'>
                     <div className="revers-forword">
                         <FontAwesomeIcon style={{ fontSize: "2rem", color: "#289bde" }} icon={faCircleChevronRight} beat />
@@ -362,7 +362,7 @@ export default function Contents() {
                             </div>
                         </div>
                     </div>
-                </div>{/* review cards and horizontal scroll */}
+                </div>
 
                 <div className="deadings my-5 text-center ">
 
@@ -374,7 +374,7 @@ export default function Contents() {
                     <div className="accourdion" >
                         <ul className="accordion">
                             {AccordionData.map(({ heading, content }) => (
-                                <Accordion heading={heading} content={content} />
+                                <Accordion key={content} heading={heading} content={content} m-1={true}/>
                             ))}
                         </ul>
                     </div>
@@ -393,19 +393,17 @@ export default function Contents() {
                 </div>
                 <div className='col text-center justify-content-center' style={{background:"#272727", color:"#FFF"}}>
                     <h1 className='text p-3'>Ed Tech</h1>
-                    <p style={{color:"#fff", fontSize:"0.8rem"}} className='text'>Office41, Noida, Delhi, India Lorem ipsum dolor sit </p>
-                    <p style={{color:"#fff", fontSize:"0.8rem"}} className='text'>, India Lorem ipsum dolor sit amet </p>
-                    <p style={{color:"#fff", fontSize:"0.8rem"}} className='text'>Privacy Policy | Tearm of use</p>
+                    <p className='footer-text'>Office41, Noida, Delhi, India Lorem ipsum dolor sit </p>
+                    <p className='footer-text'>, India Lorem ipsum dolor sit amet </p>
+                    <p className='footer-text'>Privacy Policy | Tearm of use</p>
                     <div className="social-midia p-3" style={{position:"relative", top:"-20px"}}> 
                         <FaLinkedin style={{margin:"5px",fontSize:"1.5rem"}}/>
                         <FaInstagram style={{margin:"5px",fontSize:"1.5rem"}} />
                         <FaSquareXTwitter style={{margin:"5px",fontSize:"1.5rem"}} />
                         <FaSquareFacebook style={{margin:"5px",fontSize:"1.5rem"}} />
-
                     </div>
                 </div>
-               
-            </div>{/* main container end */}
+            </div>
         </>
     )
 }

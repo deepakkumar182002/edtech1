@@ -12,6 +12,10 @@ const Accordion = ({ heading, content }) => {
       </div>
       {isActive && <div className="accordion-content">{content}</div>}
     </li>
+
+
+
+
     </>
   );
 };

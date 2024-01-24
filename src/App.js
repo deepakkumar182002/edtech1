@@ -1,4 +1,3 @@
-// import './App.css';
 import Carousel from './components/Carousel';
 import Navigation from './components/Navigation';
 import Contents from './components/Contents';
@@ -16,7 +15,6 @@ function App() {
           <Route index element={<Carousel />} />
           <Route path="/Carousels" element={<Carousel />} />
           <Route path="/contents" element={<Contents />} />
-
         </Routes>
       </BrowserRouter>
     </>

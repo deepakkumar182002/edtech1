@@ -31,7 +31,7 @@ export default function Navigation() {
                                 <NavLink className="nav-NavLink" to="/">Contact</NavLink>
                             </li>
                             <form className="form-inline my-2 my-lg-0">
-                                {/* <input className="form-control mr-sm-2" type="search" placeholder="Search"/> */}
+                                
                             </form>
 
                         </ul>

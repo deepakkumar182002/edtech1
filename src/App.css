@@ -154,3 +154,9 @@ li .nav-NavLink{
   scale: 70%;
 }
 
+/* footer-text */
+.footer-text{
+  color: #f2f1f1;
+  font-size: 0.8rem;
+}
+
