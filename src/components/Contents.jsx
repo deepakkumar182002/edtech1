@@ -151,7 +151,7 @@ export default function Contents() {
                         </div>
                         <div className="col-md-8">
                             <div className="card-body mt-5">
-                                <h2 className="card-title">Explore The E-Learning Instutute</h2>
+                                <h2 className="card-title">Explore The E-Learning Institute</h2>
                                 <p className="card-text text-muted">Lorem ipsum dolor sit ametero modi aperiam, et dolorem ipsa quia, ea maiores delectus doloribus quasi tempora odit dolor molestiae quae ullam error vel tenetur alias corrupti quo. Quia neque itaque nobis facere doloribus. This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                                 <p className='card-text text-muted'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium deleniti tenetur saepe, a voluptate itaque distinctio molestias architecto assumenda tempore?</p>
 
