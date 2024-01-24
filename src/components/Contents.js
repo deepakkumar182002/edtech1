@@ -25,18 +25,15 @@ import compony3 from "../img/compony3.png"
 import compony4 from "../img/compony4.png"
 import compony5 from "../img/compony5.png"
 import compony6 from "../img/compony6.png"
-import social from "../img/social-medea.png"
 
 import "../App.css"
 import { NavLink } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCircleChevronRight}from "@fortawesome/free-solid-svg-icons"
-// import { faSquareFacebook}from "@fortawesome/free-solid-svg-icons"
-// import { faSquareXTwitter}from "@fortawesome/free-solid-svg-icons"
-// import { faLinkedin}from "@fortawesome/free-solid-svg-icons"
-// import { faInstagram  }from "@fortawesome/free-solid-svg-icons"
+import { FaLinkedin, FaInstagram, FaSquareXTwitter,FaSquareFacebook } from "react-icons/fa6";
 import Accordion from './Accordion';
-import { accordionData } from "./data";
+import {AccordionData} from './Data'
+
 
 
 export default function Contents() {
@@ -44,8 +41,8 @@ export default function Contents() {
         <>
             <div className="container">
                 <div className="deadings my-5 text-center ">
-                    <h1>Discover Our Popular</h1>
-                    <h1>Courses</h1>
+                    <h1 className='heading-text'>Discover Our Popular </h1>
+                    <h1 className='heading-text' >Courses</h1>
                     <p>it is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
 
                 </div>
@@ -196,7 +193,7 @@ export default function Contents() {
                 </div>
 
                 <div className="meet-students my-5">
-                    <h1>Meet Our Successfull Students</h1>
+                    <h1 className='heading-text'>Meet Our Successfull Students</h1>
                     <p className='text-muted'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequatur eveniet repellat provident facilis cupiditate perspiciatis accusamus. Repellendus, nesciunt quae.</p>
                 </div>
 
@@ -237,7 +234,7 @@ export default function Contents() {
                 <br />
                 <button type="button" className="btn btn-primary d-flex m-auto">View more</button>
                 <div className="deadings my-5 text-center ">
-                    <h1>Some Student Feedback</h1>
+                    <h1 className='heading-text'>Some Student Feedback</h1>
 
                     <p className='text-muted'>it is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia fugit dolorem velit impedit laudantium delectus aperiam eveniet culpa atque ea. a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 </div>
@@ -369,14 +366,14 @@ export default function Contents() {
 
                 <div className="deadings my-5 text-center ">
 
-                    <h1>Frequently Asked Questions</h1>
+                    <h1 className='heading-text'>Frequently Asked Questions</h1>
 
                     <p className='text-muted'>it is Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia fugit dolorem velit impedit laudantium delectus aperiam eveniet culpa atque ea. a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
                 </div>
                 <div className="center-accordion" style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
                     <div className="accourdion" >
                         <ul className="accordion">
-                            {accordionData.map(({ heading, content }) => (
+                            {AccordionData.map(({ heading, content }) => (
                                 <Accordion heading={heading} content={content} />
                             ))}
                         </ul>
@@ -384,30 +381,30 @@ export default function Contents() {
                 </div>
                 <div className="deadings my-5 text-center ">
 
-                    <h1>Trusted by over 800+ componies</h1>
-                    <div className="componies-icons mt-5">
-                        <img src={compony} alt="" />
-                        <img src={compony2} alt="" />
-                        <img src={compony3} alt="" />
-                        <img src={compony4} alt="" />
-                        <img src={compony5} alt="" />
-                        <img src={compony6} alt="" />
+                    <h1 className='heading-text'>Trusted by over 800+ componies</h1>
+                    <div className="row componies-icons  mt-5 d-flex justify-content-center">
+                        <img src={compony} className='pt-3' alt="" />
+                        <img src={compony2} className='pt-3' alt="" />
+                        <img src={compony3} className='pt-3' alt="" />
+                        <img src={compony4} className='pt-3' alt="" />
+                        <img src={compony5} className='pt-3' alt="" />
+                        <img src={compony6} className='pt-3' alt="" />
                     </div>
                 </div>
-                <footer className='text-center m-5' style={{background:"#272727", color:"#FFF", position:"relative",bottom:""}}>
+                <div className='col text-center justify-content-center' style={{background:"#272727", color:"#FFF"}}>
                     <h1 className='text p-3'>Ed Tech</h1>
                     <p style={{color:"#fff", fontSize:"0.8rem"}} className='text'>Office41, Noida, Delhi, India Lorem ipsum dolor sit </p>
                     <p style={{color:"#fff", fontSize:"0.8rem"}} className='text'>, India Lorem ipsum dolor sit amet </p>
                     <p style={{color:"#fff", fontSize:"0.8rem"}} className='text'>Privacy Policy | Tearm of use</p>
-                    <div className="social-midia" style={{position:"relative", top:"-20px"}}>
-                        <img src={social} style={{scale:"30%"}}alt="" />
-                    {/* <FontAwesomeIcon icon={faSquareFacebook} />
-                    <FontAwesomeIcon icon={faSquareXTwitter} />
-                    <FontAwesomeIcon icon={faLinkedin} />
-                    <FontAwesomeIcon icon={faInstagram} /> */}
-                    </div>
+                    <div className="social-midia p-3" style={{position:"relative", top:"-20px"}}> 
+                        <FaLinkedin style={{margin:"5px",fontSize:"1.5rem"}}/>
+                        <FaInstagram style={{margin:"5px",fontSize:"1.5rem"}} />
+                        <FaSquareXTwitter style={{margin:"5px",fontSize:"1.5rem"}} />
+                        <FaSquareFacebook style={{margin:"5px",fontSize:"1.5rem"}} />
 
-                </footer>
+                    </div>
+                </div>
+               
             </div>{/* main container end */}
         </>
     )

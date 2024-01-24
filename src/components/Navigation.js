@@ -13,7 +13,7 @@ export default function Navigation() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
 
-                    <div className="collapse navbar-collapse justify-content-center" id="navbarTogglerDemo02">
+                    <div className="collapse navbar-collapse justify-content-end" id="navbarTogglerDemo02">
                         <ul className="navbar-nav mr-center mt-2 mt-lg-0" >
                             <li className="nav-item active mx-3">
                                 <NavLink className="nav-NavLink"to="/Carousels" style={{color:"313131",textDecoration:"Underline"}}>Home <span className="sr-only">(current)</span></NavLink>
@@ -33,9 +33,9 @@ export default function Navigation() {
                             <form className="form-inline my-2 my-lg-0">
                                 {/* <input className="form-control mr-sm-2" type="search" placeholder="Search"/> */}
                             </form>
-                                <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Register</button>
 
                         </ul>
+                                <button className="btn btn-outline-success my-sm-0" type="submit" style={{marginLeft:"220px"}}>Register</button>
                     </div>
                 </nav>
          

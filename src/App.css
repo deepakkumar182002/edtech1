@@ -92,14 +92,19 @@ li .nav-NavLink{
 }
 
 
+@media screen and (max-width: 360px) {
+  .heading-text{
+    font-size: 1.5rem;
+  }
+}
 
 @media screen and (max-width: 760px) {
   /* .card{
-      background-color: red;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
+    background-color: red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
       
   } */
   img{
@@ -113,7 +118,12 @@ li .nav-NavLink{
 
 
 .accordion {
-  max-width: 768px;
+  max-width: 608px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-position: center;
 }
 .accordion-item {
   list-style: none;
@@ -139,5 +149,8 @@ li .nav-NavLink{
 
 /* componies icons */
 .componies-icons img{
+  display: flex;
+  flex-wrap: wrap;
   scale: 70%;
 }
+

@@ -1,4 +1,4 @@
-export const accordionData = [
+export const AccordionData = [
     {
       heading: "Will my license be automatically renewed?",
       content:
