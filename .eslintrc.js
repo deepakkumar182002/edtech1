@@ -27,10 +27,14 @@ module.exports = {
     node: true,
   },
   extends: ["eslint:recommended", "plugin:react/recommended"],
-  plugins: ["react"],
+  plugins: ["react-hooks"],
   rules: {
     // Customize your rules here
     // Example: 'no-console': 'off',
+    semi: ["error", "always"],
+    quotes: ["error", "double"],
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
   },
   settings: {
     react: {

@@ -1,38 +1,38 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+body {
   margin: 0;
   padding: 0;
-  background:rgb(248 249 250);
+  background: rgb(248 249 250);
   overflow-x: hidden;
 }
 
 /* NavLink color and hover effect */
-li .nav-NavLink:active{
+li .nav-NavLink:active {
   color: #313131;
 }
-li .nav-NavLink:hover{
+li .nav-NavLink:hover {
   opacity: 80%;
 }
 
-li .nav-NavLink{
-  color:#313131;
-  text-decoration:none;
+li .nav-NavLink {
+  color: #313131;
+  text-decoration: none;
 }
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   background: none;
 }
-#horizontall{
+#horizontall {
   width: 100%;
   height: auto;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.revers-forword{
+.revers-forword {
   width: 80%;
   position: relative;
   height: auto;
@@ -41,9 +41,8 @@ li .nav-NavLink{
   top: 120px;
   z-index: 2;
   justify-content: space-between;
-
 }
-.scroll-container{
+.scroll-container {
   z-index: 1;
   width: 76%;
   height: auto;
@@ -54,33 +53,29 @@ li .nav-NavLink{
   display: inline-block;
 }
 
-.animatecard{
+.animatecard {
   animation: run 10s infinite ease;
   display: inline-block;
-  
 }
 @keyframes run {
-  
-  10%{
+  10% {
     transform: translateX(0px);
   }
-  25%{
+  25% {
     transform: translateX(-250px);
   }
-  50%{
+  50% {
     transform: translateX(-500px);
   }
-  75%{
+  75% {
     transform: translateX(-500px);
   }
-  100%{
+  100% {
     transform: translateX(-250px);
   }
-
-  
 }
 /* wraptext for all review cards */
-.wraptext{
+.wraptext {
   border: 1px solid gray;
   display: flex;
   position: relative;
@@ -91,9 +86,8 @@ li .nav-NavLink{
   padding: 5px;
 }
 
-
 @media screen and (max-width: 360px) {
-  .heading-text{
+  .heading-text {
     font-size: 1.5rem;
   }
 }
@@ -107,15 +101,14 @@ li .nav-NavLink{
     position: relative;
       
   } */
-  img{
-      position: relative;
-      display: flex;
+  img {
+    position: relative;
+    display: flex;
   }
-  .getstarted{
-      font-size: 30px;
+  .getstarted {
+    font-size: 30px;
   }
 }
-
 
 .accordion {
   max-width: 608px;
@@ -148,19 +141,18 @@ li .nav-NavLink{
 }
 
 /* componies icons */
-.componies-icons img{
+.componies-icons img {
   display: flex;
   flex-wrap: wrap;
   scale: 70%;
 }
 
 /* footer-text */
-.footer-text{
+.footer-text {
   color: #f2f1f1;
   font-size: 0.8rem;
 }
 
-.nav-NavLink.active{
+.nav-NavLink.active {
   color: #289bde;
 }
-
