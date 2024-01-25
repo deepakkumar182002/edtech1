@@ -36,8 +36,8 @@ import {
     FaSquareXTwitter,
     FaSquareFacebook,
 } from "react-icons/fa6";
-import { AccordionData } from "./Data";
-import Accordion from "./Accordion";
+// import { AccordionData } from "./Data";
+// import Accordion from "./Accordion";
 
 export default function Contents() {
     return (
@@ -637,7 +637,7 @@ export default function Contents() {
                         layout.
                     </p>
                 </div>
-                <div
+                {/* <div
                     className="center-accordion"
                     style={{
                         display: "flex",
@@ -657,7 +657,7 @@ export default function Contents() {
                             ))}
                         </ul>
                     </div>
-                </div>
+                </div> */}
                 <div className="deadings my-5 text-center ">
                     <h1 className="heading-text">Trusted by over 800+ componies</h1>
                     <div className="row componies-icons  mt-5 d-flex justify-content-center">
