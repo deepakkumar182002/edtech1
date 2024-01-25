@@ -13,7 +13,7 @@
 // };
 
 module.exports = {
-  parser: "@babel/eslint-parser", // Use Babel parser for better ESNext support
+  //   parser: "@babel/eslint-parser", // Use Babel parser for better ESNext support
   parserOptions: {
     ecmaVersion: 2019, // or a higher version that supports your ECMAScript features
     sourceType: "module",

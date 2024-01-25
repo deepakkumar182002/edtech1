@@ -675,7 +675,7 @@ export default function Contents() {
         >
           <h1 className="text p-3">Ed Tech</h1>
           <p className="footer-text">
-            Office41, Noida, Delhi, India Lorem ipsum dolor sit{" "}
+            Office41, Noida, Delhi, India Lorem ipsum dolor sit
           </p>
           <p className="footer-text">, India Lorem ipsum dolor sit amet </p>
           <p className="footer-text">Privacy Policy | Tearm of use</p>
