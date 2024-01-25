@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../App.css";
 
-const Accordion = ({ heading, content }) => {
+const Accordion = ({heading, content}) => {
   const [isActive, setIsActive] = useState(false);
   return (
     <>

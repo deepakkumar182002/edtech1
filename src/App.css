@@ -160,3 +160,7 @@ li .nav-NavLink{
   font-size: 0.8rem;
 }
 
+.nav-NavLink.active{
+  color: #289bde;
+}
+

@@ -1,7 +1,7 @@
-import React from 'react'
-import logo from '../img/logo.jpg'
-import {NavLink} from 'react-router-dom'
-import '../App.css'
+import React from "react";
+import logo from "../img/logo.jpg";
+import {NavLink} from "react-router-dom";
+import "../App.css";
 export default function Navigation() {
     return (
         <>
@@ -42,5 +42,5 @@ export default function Navigation() {
 
             </div>
         </>
-    )
+    );
 }
