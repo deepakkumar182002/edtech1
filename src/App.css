@@ -110,7 +110,7 @@ li .nav-NavLink {
   }
 }
 
-.accordion {
+/* .accordion {
   max-width: 608px;
   display: flex;
   flex-wrap: wrap;
@@ -138,7 +138,7 @@ li .nav-NavLink {
 .accordion-content {
   background-color: rgb(248 249 250);
   padding: 1em;
-}
+} */
 
 /* componies icons */
 .componies-icons img {
