@@ -156,3 +156,21 @@ li .nav-NavLink {
 .nav-NavLink.active {
   color: #289bde;
 }
+
+/* dropdown menu css */
+.dropdown:hover>.dropdown-menu {
+  display: block;
+}
+
+.dropdown>.dropdown-toggle:active {
+  /* Without this, clicking will make it sticky */
+    pointer-events: none;
+}
+.btn:hover{
+  opacity: 90%;
+
+}
+.btn{
+  color: #fff;
+  background: #289bde;
+}

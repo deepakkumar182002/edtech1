@@ -36,12 +36,12 @@ import {
     FaSquareXTwitter,
     FaSquareFacebook,
 } from "react-icons/fa6";
-// import { AccordionData } from "./Data";
-// import Accordion from "./Accordion";
+import Carousel from "./Carousel";
 
 export default function Contents() {
     return (
         <React.Fragment>
+            <Carousel />
             <div className="container">
                 <div className="deadings my-5 text-center ">
                     <h1 className="heading-text">Discover Our Popular </h1>
