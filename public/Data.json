@@ -1,0 +1,57 @@
+  [
+    {
+      "id": "S123456",
+      "name": "Microsoft",
+      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
+      "address": "123 Main Street",
+      "state": "California",
+      "country": "United States",
+      "image": "logo192.png"
+    },
+    {
+      "id": "S143456",
+      "name": "Amazon",
+      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
+      "address": "456 Oak Avenue",
+      "state": "New York",
+      "country": "United States",
+      "image": "logo512.png"
+    },
+    {
+      "id": "S143456",
+      "name": "Amazon",
+      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
+      "address": "456 Oak Avenue",
+      "state": "New York",
+      "country": "United States",
+      "image": "logo512.png"
+    },
+    {
+      "id": "S143456",
+      "name": "Amazon",
+      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
+      "address": "456 Oak Avenue",
+      "state": "New York",
+      "country": "United States",
+      "image": "logo512.png"
+    },
+    {
+      "id": "S143456",
+      "name": "Amazon",
+      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
+      "address": "456 Oak Avenue",
+      "state": "New York",
+      "country": "United States",
+      "image": "logo512.png"
+    },
+    {
+      "id": "S183456",
+      "name": "FlipCart",
+      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
+      "address": "789 Elm Road",
+      "state": "Texas",
+      "country": "United States",
+      "image": "logo192.png"
+    }
+  ]
+  

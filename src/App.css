@@ -168,9 +168,20 @@ li .nav-NavLink {
 }
 .btn:hover{
   opacity: 90%;
+  color: #fff;
 
 }
 .btn{
   color: #fff;
   background: #289bde;
+}
+/* .nav-link:active{
+  background: #289bde;
+  border: none;
+
+} */
+.allcard{
+}
+li{
+  list-style: none;
 }

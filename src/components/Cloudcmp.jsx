@@ -58,7 +58,7 @@ export default function Cloudcmp() {
                 </div>
             </div>
             <div className="my-5">
-                <h2 className="d-flex justify-content-center m-1 align-items-center" style={{background:"#289bde", color:"#fff",height:"60px"}}>Why Join Program ?</h2>
+                <h2 className="d-flex justify-content-center m-1 align-items-center" style={{ background: "#289bde", color: "#fff", height: "60px" }}>Why Join Program ?</h2>
                 <div className="row align-items-start justify-content-center">
 
                     <div className="box" style={{ height: "200px" }}>
@@ -67,42 +67,42 @@ export default function Cloudcmp() {
                             <div className="card-body">
                                 <h5 className="card-title">Promising Career in Cloud</h5>
                                 <p className="card-text">Develop a lucrative career in the cloud domain, which boasts some of the highest-paying IT job roles</p>
-                                
+
                             </div>
                         </div>
                     </div>
 
                     <div className="box" style={{ height: "200px" }}>
-                    <MdOutlineTouchApp style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1"}}/>
+                        <MdOutlineTouchApp style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                         <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
                             <div className="card-body">
                                 <h5 className="card-title">Caltech Campus Visit Event</h5>
-                                
+
                                 <p className="card-text">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
-                                
+
                             </div>
                         </div>
                     </div>
                     <div className="box" style={{ height: "200px" }}>
-                    <GrGlobe style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
-                    <div className="card ml-2" style={{ width: "20rem", borderBottom: "5px solid#289bde" }}>
-                        <div className="card-body">
-                            <h5 className="card-title">Caltech&apos;s Academic Excellence</h5>
-                            <p className="card-text">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
-                           
+                        <GrGlobe style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
+                        <div className="card ml-2" style={{ width: "20rem", borderBottom: "5px solid#289bde" }}>
+                            <div className="card-body">
+                                <h5 className="card-title">Caltech&apos;s Academic Excellence</h5>
+                                <p className="card-text">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
+
+                            </div>
                         </div>
-                    </div>
                     </div>
                 </div>
                 <div className="col">
                     <h2 className="text-center my-5">Top Componies Hiring</h2>
-                    <div className="row d-flex" style={{background:"#f0f0f0",borderRadius:"10px"}}>
-                    <img className="col m-2" src={compony} style={{height:"50px",width:"100px"}}alt="" />
-                    <img className="col m-2" src={compony2}style={{height:"50px",width:"100px"}} alt="" />
-                    <img className="col m-2" src={compony3}style={{height:"50px",width:"100px"}} alt="" />
-                    <img className="col m-2" src={compony4}style={{height:"50px",width:"100px"}} alt="" />
-                    <img className="col m-2" src={compony5}style={{height:"50px",width:"100px"}} alt="" />
-                    <img className="col m-2" src={compony6}style={{height:"50px",width:"100px"}} alt="" />
+                    <div className="row d-flex" style={{ background: "#f0f0f0", borderRadius: "10px" }}>
+                        <img className="col m-2" src={compony} style={{ height: "50px", width: "100px" }} alt="" />
+                        <img className="col m-2" src={compony2} style={{ height: "50px", width: "100px" }} alt="" />
+                        <img className="col m-2" src={compony3} style={{ height: "50px", width: "100px" }} alt="" />
+                        <img className="col m-2" src={compony4} style={{ height: "50px", width: "100px" }} alt="" />
+                        <img className="col m-2" src={compony5} style={{ height: "50px", width: "100px" }} alt="" />
+                        <img className="col m-2" src={compony6} style={{ height: "50px", width: "100px" }} alt="" />
                     </div>
                 </div>
             </div>

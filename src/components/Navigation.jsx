@@ -2,11 +2,11 @@ import React from "react";
 import logo from "../img/logo.jpg";
 import { Link, NavLink } from "react-router-dom";
 import "../App.css";
-export default function Navigation() {
+export default function Navigation(Props) {
   return (
     <>
       <div className="container-fluid">
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className={`navbar navbar-expand-lg navbar-light bg-${Props.btncolor}`}>
           <NavLink className="navbar-brand fs-2 d-flex row" to="/">
             <img src={logo} height={40} width={40} alt="" />
             <b className="pt-1 mx-2">StarLink IT Solutions</b>
@@ -47,12 +47,13 @@ export default function Navigation() {
                       <Link className="dropdown-item" to="/">IOT / Embedded</Link>
                       <Link className="dropdown-item" to="/">Graphics Design</Link>
                       <Link className="dropdown-item" to="/">Drone Technology</Link>
+                      <Link type="button" className="btn m-4" to="/explorecourses">More Courses</Link>
                     </li>
                     <li className="box col">
                       <div className="card">
                         
                       <Link className="dropdown-item" to="/">AI & Machine Learning</Link>
-                      <Link className="dropdown-item" to="/">OS Linux,</Link>
+                      <Link className="dropdown-item" to="/">OS Linux</Link>
                       <Link className="dropdown-item" to="/">DevOps</Link>
 
                       </div>
@@ -64,7 +65,7 @@ export default function Navigation() {
               <li className="nav-item active mx-3">
                 <NavLink
                   className="nav-NavLink"
-                  to="/Carousels"
+                  to="/"
                   style={{ color: "313131", textDecoration: "Underline" }}
                 >
                   Home <span className="sr-only">(current)</span>
@@ -72,7 +73,7 @@ export default function Navigation() {
               </li>
 
               <li className="nav-item mx-3">
-                <NavLink className="nav-NavLink" to="/contents">
+                <NavLink className="nav-NavLink" to="/">
                   About
                 </NavLink>
               </li>
@@ -82,9 +83,9 @@ export default function Navigation() {
                 </NavLink>
               </li>
               <li className="nav-item mx-3">
-                <a className="nav-NavLink" to="/">
+                <NavLink className="nav-NavLink" to="/">
                   Contact
-                </a>
+                </NavLink>
               </li>
               <form className="form-inline my-2 my-lg-0"></form>
             </ul>

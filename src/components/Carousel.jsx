@@ -23,13 +23,13 @@ export default function Carousel() {
                 <h1>India&apos;s Best Learning Plateform</h1>
                 <p>...</p>
               </div>
-              <img className="d-block w-100" style={{ opacity: "50%" }} src={poster1} alt="First slide" />
+              <img className="d-block w-100 " style={{ opacity: "50%", height: "600px" }} src={poster1} alt="First slide" />
             </div>
             <div className="carousel-item" style={{ background: "black" }}>
-              <img className="d-block w-100" style={{ opacity: "50%" }} src={poster2} alt="Second slide" />
+              <img className="d-block w-100" style={{ opacity: "50%", height: "600px" }} src={poster2} alt="Second slide" />
             </div>
             <div className="carousel-item" style={{ background: "black" }}>
-              <img className="d-block w-100" style={{ opacity: "50%" }} src={poster3} alt="Third slide" />
+              <img className="d-block w-100" style={{ opacity: "50%", height: "600px" }} src={poster3} alt="Third slide" />
             </div>
           </div>
           <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -42,7 +42,7 @@ export default function Carousel() {
           </a>
         </div>
       </div>
-      
+
     </React.Fragment>
   );
 }
