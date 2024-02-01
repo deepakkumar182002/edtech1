@@ -625,18 +625,6 @@ export default function Contents() {
                         </div>
                     </div>
                 </div>
-
-                <div className="deadings my-5 text-center ">
-                    <h1 className="heading-text">Frequently Asked Questions</h1>
-
-                    <p className="text-muted">
-                        it is Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Officia fugit dolorem velit impedit laudantium delectus aperiam
-                        eveniet culpa atque ea. a long established fact that a reader will
-                        be distracted by the readable content of a page when looking at its
-                        layout.
-                    </p>
-                </div>
                 {/* <div
                     className="center-accordion"
                     style={{

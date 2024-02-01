@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../img/logo.jpg";
+import logo2 from "../img/logo2.jpg";
 import { Link, NavLink } from "react-router-dom";
 import "../App.css";
 export default function Navigation(Props) {
@@ -8,8 +8,8 @@ export default function Navigation(Props) {
       <div className="container-fluid">
         <nav className={`navbar navbar-expand-lg navbar-light bg-${Props.btncolor}`}>
           <NavLink className="navbar-brand fs-2 d-flex row" to="/">
-            <img src={logo} height={40} width={40} alt="" />
-            <b className="pt-1 mx-2">StarLink IT Solutions</b>
+            <img className="mainlogo"src={logo2} height={40} width={40} alt="" />
+            <b className="pt-1 mx-2 logotext">StarLink IT Solutions</b>
           </NavLink>
           <button
             className="navbar-toggler"
@@ -50,7 +50,7 @@ export default function Navigation(Props) {
                       <Link type="button" className="btn m-4" to="/explorecourses">More Courses</Link>
                     </li>
                     <li className="box col">
-                      <div className="card">
+                      <div className="box">
                         
                       <Link className="dropdown-item" to="/">AI & Machine Learning</Link>
                       <Link className="dropdown-item" to="/">OS Linux</Link>
