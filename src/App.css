@@ -189,9 +189,22 @@ li .nav-NavLink {
   border: none;
 
 } */
+.cards{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.cardcolor{
+  background: #e5f7f9d9;
+}
+
+li{
+  list-style: none;
+}
 .card-container{
   position: absolute;
 }
-li{
-  list-style: none;
+.nav-link:hover{
+  color: #289bde;
+  background: #e5f7f9d9;
 }

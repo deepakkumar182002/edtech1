@@ -38,8 +38,8 @@ export default function Navigation(Props) {
                 <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton" style={{ width: "auto" }}>
                   <div className="d-flex flex-row" style={{ width: "100%", position: "relative" }}>
                     <li className="box col">
-                      <Link className="dropdown-item" to="/">Software Development</Link>
-                      <Link className="dropdown-item" to="/Cloudcmp">Cloud Computing</Link>
+                      <Link className="dropdown-item" to="/softwaredev">Software Development</Link>
+                      <Link className="dropdown-item" to="/Cloudcomputing">Cloud Computing</Link>
                       <Link className="dropdown-item" to="/">digital marketing</Link>
                       <Link className="dropdown-item" to="/">Syber Security</Link>
                       <Link className="dropdown-item" to="/">Data Science</Link>

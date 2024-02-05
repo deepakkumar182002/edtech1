@@ -13,19 +13,19 @@ import { NavLink } from "react-router-dom";
 import { GrCertificate, GrGlobe } from "react-icons/gr";
 import { MdOutlineTouchApp } from "react-icons/md";
 // import { CiGlobe } from "react-icons/ci";
-export default function Cloudcmp() {
+export default function Softwaredev() {
     // const CloudParam = useParams();
 
     return (
         <div className="container">
             <NavLink to="/" className="text-muted">Home&gt;</NavLink>
-            <NavLink to="/Cloudcmp" className="text-muted">Cloudcmp</NavLink>
+            <NavLink to="/Cloudcmp" className="text-muted">Software development</NavLink>
             <div className="row d-flex">
                 <div className="col">
                     <img src={logo} alt="" className="logo h-20 w-10 my-3" />
-                    <h1>Certification in Cloud Computing</h1>
+                    <h1>Certification in Software development</h1>
                     <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
-                    <p>Explore the dynamic world of Cloud Computing with our comprehensive course. Master key concepts such as virtualization, scalability, and security. Gain hands-on experience with leading cloud platforms, preparing you for a successful career in this rapidly evolving field. Join us and harness the power of cloud technology for innovation and efficiency.</p>
+                    <p>Embark on a transformative journey with our Software Development Course! Dive into a comprehensive program designed to equip you with the skills needed to thrive in the dynamic world of software development. From mastering programming languages to understanding industry best practices, our course offers hands-on experience and expert guidance. Elevate your career prospects by enrolling today and unlocking a world of opportunities in the rapidly evolving field of software development. Your future in tech starts here!</p>
                     <div className="d-flex align-items-center">
                         <h5 className="text-muted ">Certificate Assign with </h5>
                         {/* <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" />
@@ -65,8 +65,8 @@ export default function Cloudcmp() {
                         <GrCertificate style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                         <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
                             <div className="card-body">
-                                <h5 className="card-title">Promising Career in Cloud</h5>
-                                <p className="card-text">Develop a lucrative career in the cloud domain, which boasts some of the highest-paying IT job roles</p>
+                                <h5 className="card-title">Promising Career in Software development</h5>
+                                <p className="card-text">Develop a lucrative career in the software development, which boasts some of the highest-paying IT job roles</p>
 
                             </div>
                         </div>

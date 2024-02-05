@@ -3,6 +3,7 @@ import Navigation from "./components/Navigation";
 import Contents from "./components/Contents";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cloudcmp from "./components/Cloudcmp";
+import Softwaredev from "./components/Softwaredev";
 import "../src/App.css";
 import ExploreCourses from "./components/ExploreCourses";
 
@@ -19,7 +20,8 @@ function App() {
           ;
           {/* <Route path="/*" element={<Page404 />} /> */}
           <Route path="/" element={<Contents />} />;
-          <Route path="/Cloudcmp" element={<Cloudcmp />} />;
+          <Route path="/Cloudcomputing" element={<Cloudcmp />} />;
+          <Route path="/Softwaredev" element={<Softwaredev />} />;
           <Route path="/explorecourses"element={<ExploreCourses />} />
           {/* <Route path="/explorecourses" element={<Courses />} /> */}
           {/* <Route path="/courses/:name" element={<Courses />} />

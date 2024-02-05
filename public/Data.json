@@ -1,57 +1,28 @@
   [
     {
       "id": "S123456",
-      "name": "Microsoft",
-      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
-      "address": "123 Main Street",
-      "state": "California",
+      "name": "Certification in Software Development for Beginner",
+      "content":"become ready to join a software development 3-month beginner course. in this course, we will learn most industries' requirements for developers",
+      "address": "/softwaredev",
+      "state": "California", 
       "country": "United States",
       "image": "logo192.png"
-    },
-    {
-      "id": "S143456",
-      "name": "Amazon",
-      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
-      "address": "456 Oak Avenue",
-      "state": "New York",
-      "country": "United States",
-      "image": "logo512.png"
-    },
-    {
-      "id": "S143456",
-      "name": "Amazon",
-      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
-      "address": "456 Oak Avenue",
-      "state": "New York",
-      "country": "United States",
-      "image": "logo512.png"
-    },
-    {
-      "id": "S143456",
-      "name": "Amazon",
-      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
-      "address": "456 Oak Avenue",
-      "state": "New York",
-      "country": "United States",
-      "image": "logo512.png"
-    },
-    {
-      "id": "S143456",
-      "name": "Amazon",
-      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
-      "address": "456 Oak Avenue",
-      "state": "New York",
-      "country": "United States",
-      "image": "logo512.png"
     },
     {
       "id": "S183456",
-      "name": "FlipCart",
-      "content":"Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolore fugit non porro.",
-      "address": "789 Elm Road",
+      "name": "Certification in Software Development for Advanced",
+      "content":"become ready to join a software development 3-month Addvanced course. in this course, we will learn most industries' requirements for developers",
+      "address": "/softwaredev",
       "state": "Texas",
       "country": "United States",
       "image": "logo192.png"
+    },
+    {
+      "id2": "S143456",
+      "name2": "Cloud computing",
+      "content2":"become ready to join a Cloud computing 3-month beginner course. in this course, we will learn most industries' requirements for developers",
+      "address2": "/Cloudcomputing",
+      "image2": "logo512.png"
     }
   ]
   

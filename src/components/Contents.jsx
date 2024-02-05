@@ -27,7 +27,7 @@ import compony5 from "../img/compony5.png";
 import compony6 from "../img/compony6.png";
 
 import "../App.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
 import {
@@ -51,174 +51,205 @@ export default function Contents() {
                         the readable content of a page when looking at its layout.
                     </p>
                 </div>
+                <div className="card-container justify-content-center row">
+                   
+                        <div className="card mb-3 m-1" style={{ maxWidth: "500px" }}>
+                            <div className="row g-0">
+                                <div className="col-md-4 align-self-center">
+                                    <img
+                                        src={card1}
+                                        className="img-fluid rounded-start m-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <h5 className="card-title">Software Development</h5>
+                                        <p className="card-text">
+                                            become ready to join a software development 3-month beginner course. in this course, we will learn most industries requirements for developers.
+                                        </p>
+                                        <li className="text-muted" style={{ fontSize: "0.8rem" }}>102.2k Learners</li>
+                                        <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;</span>&#9733; 4.1(3563 Rating)</li>
 
-                <div className="row align-items-start justify-content-center">
-                    <div className="card mb-3 m-1" style={{ maxWidth: "540px" }}>
-                        <div className="row g-0">
-                            <div className="col-md-4 align-self-center">
-                                <img
-                                    src={card1}
-                                    className="img-fluid rounded-start m-3"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">
-                                        This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                    </p>
-                                    <p className="card-text">
-                                        <small className="text-muted">
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
+                                        <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
+                                            <small className="text-muted d-flex justify-content-start">
+                                                Last updated 3 mins ago
+                                            </small>
+                                            <Link to='/softwaredev'>Explore now</Link>
+
+                                        </li>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div className="card mb-3 m-1" style={{ maxWidth: "540px" }}>
-                        <div className="row g-0">
-                            <div className="col-md-4 align-self-center">
-                                <img
-                                    src={card2}
-                                    className="img-fluid rounded-start m-3"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">
-                                        This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                    </p>
-                                    <p className="card-text">
-                                        <small className="text-muted">
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
+                 
+                    {/* card2 */}
+                
+                        <div className="card mb-3 m-1" style={{ maxWidth: "500px" }}>
+                            <div className="row g-0">
+                                <div className="col-md-4 align-self-center">
+                                    <img
+                                        src={card2}
+                                        className="img-fluid rounded-start m-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <h5 className="card-title">Cloud Computing</h5>
+                                        <p className="card-text">
+                                        become ready to join a Cloud computing 3-month beginner course. in this course, we will learn most industries&apos; requirements for developers
+                                        </p>
+                                        <li className="text-muted" style={{ fontSize: "0.8rem" }}>90.2k Learners</li>
+                                        <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;</span>&#9733; 4.1(3563 Rating)</li>
+
+                                        <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
+                                            <small className="text-muted d-flex justify-content-start">
+                                                Last updated 3 mins ago
+                                            </small>
+                                            <Link to='/Cloudcomputing'>Explore now</Link>
+
+                                        </li>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+         
+                    {/* card3 */}
+               
+                        <div className="card mb-3 m-1" style={{ maxWidth: "500px" }}>
+                            <div className="row g-0">
+                                <div className="col-md-4 align-self-center">
+                                    <img
+                                        src={card6}
+                                        className="img-fluid rounded-start m-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <h5 className="card-title">Digital Marketing</h5>
+                                        <p className="card-text">
+                                        Unlock the secrets of digital marketing! Join our comprehensive course for expert insights on SEO, social media, and more. Elevate your skills and boost your career. Enroll today!
+                                        </p>
+                                        <li className="text-muted" style={{ fontSize: "0.8rem" }}>101.2k Learners</li>
+                                        <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;</span>&#9733; 4.1(3563 Rating)</li>
+
+                                        <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
+                                            <small className="text-muted d-flex justify-content-start">
+                                                Last updated 3 mins ago
+                                            </small>
+                                            <Link to='/'>Explore now</Link>
+
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
+                    {/* card4 */}
+              
+                        <div className="card mb-3 m-1" style={{ maxWidth: "500px" }}>
+                            <div className="row g-0">
+                                <div className="col-md-4 align-self-center">
+                                    <img
+                                        src={card3}
+                                        className="img-fluid rounded-start m-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <h5 className="card-title">Cyber Security</h5>
+                                        <p className="card-text">
+                                        Enhance your digital defense skills with our comprehensive Cyber Security Course. Learn vital strategies, ethical hacking, and safeguarding techniques. Enroll now to secure your online presence and future.
+                                        </p>
+                                        <li className="text-muted" style={{ fontSize: "0.8rem" }}>82.2k Learners</li>
+                                        <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;</span>&#9733; 4.1(3533 Rating)</li>
+
+                                        <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
+                                            <small className="text-muted d-flex justify-content-start">
+                                                Last updated 3 mins ago
+                                            </small>
+                                            <Link to='/'>Explore now</Link>
+
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    {/* card5 */}
+                    
+                        <div className="card mb-3 m-1" style={{ maxWidth: "500px" }}>
+                            <div className="row g-0">
+                                <div className="col-md-4 align-self-center">
+                                    <img
+                                        src={card5}
+                                        className="img-fluid rounded-start m-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <h5 className="card-title">Data Science</h5>
+                                        <p className="card-text">
+                                        Unlock the power of data! Enroll in our Data Science Course for hands-on experience in analytics, machine learning, and more. Elevate your skills and career. Join now!
+                                        </p>
+                                        <li className="text-muted" style={{ fontSize: "0.8rem" }}>150.2k Learners</li>
+                                        <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;</span>&#9733; 4.1(3263 Rating)</li>
+
+                                        <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
+                                            <small className="text-muted d-flex justify-content-start">
+                                                Last updated 3 mins ago
+                                            </small>
+                                            <Link to='/'>Explore now</Link>
+
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                  
+                    {/* card6 */}
+                    
+                        <div className="card mb-3 m-1" style={{ maxWidth: "500px" }}>
+                            <div className="row g-0">
+                                <div className="col-md-4 align-self-center">
+                                    <img
+                                        src={card4}
+                                        className="img-fluid rounded-start m-3"
+                                        alt="..."
+                                    />
+                                </div>
+                                <div className="col-md-8">
+                                    <div className="card-body">
+                                        <h5 className="card-title">UI / UX</h5>
+                                        <p className="card-text">
+                                        Unlock creativity with our UI/UX course! Dive into design principles, user research, prototyping, and more. Master the art of crafting seamless digital experiences. Enroll now for innovation
+                                        </p>
+                                        <li className="text-muted" style={{ fontSize: "0.8rem" }}>202.2k Learners</li>
+                                        <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;</span>&#9733; 4.1(3563 Rating)</li>
+
+                                        <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
+                                            <small className="text-muted d-flex justify-content-start">
+                                                Last updated 3 mins ago
+                                            </small>
+                                            <Link to='/'>Explore now</Link>
+
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   
                 </div>
 
-                <div className="row align-items-start justify-content-center">
-                    <div className="card mb-3 m-1" style={{ maxWidth: "540px" }}>
-                        <div className="row g-0">
-                            <div className="col-md-4 align-self-center">
-                                <img
-                                    src={card3}
-                                    className="img-fluid rounded-start m-3"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">
-                                        This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                    </p>
-                                    <p className="card-text">
-                                        <small className="text-muted">
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card mb-3 m-1" style={{ maxWidth: "540px" }}>
-                        <div className="row g-0">
-                            <div className="col-md-4 align-self-center">
-                                <img
-                                    src={card4}
-                                    className="img-fluid rounded-start m-3"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">
-                                        This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                    </p>
-                                    <p className="card-text">
-                                        <small className="text-muted">
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className="row align-items-start justify-content-center">
-                    <div className="card mb-3 m-1" style={{ maxWidth: "540px" }}>
-                        <div className="row g-0">
-                            <div className="col-md-4 align-self-center">
-                                <img
-                                    src={card5}
-                                    className="img-fluid rounded-start m-3"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">
-                                        This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                    </p>
-                                    <p className="card-text">
-                                        <small className="text-muted">
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card mb-3 m-1" style={{ maxWidth: "540px" }}>
-                        <div className="row g-0">
-                            <div className="col-md-4 align-self-center">
-                                <img
-                                    src={card6}
-                                    className="img-fluid rounded-start m-3"
-                                    alt="..."
-                                />
-                            </div>
-                            <div className="col-md-8">
-                                <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
-                                    <p className="card-text">
-                                        This is a wider card with supporting text below as a natural
-                                        lead-in to additional content. This content is a little bit
-                                        longer.
-                                    </p>
-                                    <p className="card-text">
-                                        <small className="text-muted">
-                                            Last updated 3 mins ago
-                                        </small>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <br />
-                <button type="button" className="btn btn-primary d-flex m-auto">
+                <button className="btn btn-primary d-flex m-auto" >
+                <Link  type="button" style={{color:"#fff",textDecoration:"none"}} to='/explorecourses'>
                     See more Courses
+                </Link>
                 </button>
 
                 <div
@@ -231,19 +262,12 @@ export default function Contents() {
                         </div>
                         <div className="col-md-8">
                             <div className="card-body mt-5">
-                                <h2 className="card-title">Explore The E-Learning Institute</h2>
+                                <h2 className="card-title">Explore Smart Learning</h2>
                                 <p className="card-text text-muted">
-                                    Lorem ipsum dolor sit ametero modi aperiam, et dolorem ipsa
-                                    quia, ea maiores delectus doloribus quasi tempora odit dolor
-                                    molestiae quae ullam error vel tenetur alias corrupti quo.
-                                    Quia neque itaque nobis facere doloribus. This is a wider card
-                                    with supporting text below as a natural lead-in to additional
-                                    content. This content is a little bit longer.
+                                Embark on a transformative educational journey with Explore Smart Learning&apos;s online courses. Unleash your potential through cutting-edge content delivered by industry experts. From personalized learning paths to interactive modules, our platform offers a dynamic and engaging experience. Elevate your skills, boost your career, and embrace the future of education. Join us in redefining smart learning today!
                                 </p>
                                 <p className="card-text text-muted">
-                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                                    Laudantium deleniti tenetur saepe, a voluptate itaque
-                                    distinctio molestias architecto assumenda tempore?
+                                Discover top-notch online courses! Our platform offers a diverse range of subjects taught by experts. Empower your learning journey with user-rated courses.
                                 </p>
 
                                 <div className="d-flex flex-row ">
@@ -261,9 +285,9 @@ export default function Contents() {
                                     </span>
                                 </div>
                                 <br />
-                                <button type="button" className="btn btn-primary m-auto">
+                                <Link type="button" to='/explorecourses' className="btn btn-primary m-auto">
                                     Read more
-                                </button>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -287,8 +311,8 @@ export default function Contents() {
                     </div>
                     <div className="row m-2">
                         <div className="col mt-5">
-                            <NavLink
-                                to="/"
+                            <Link
+                                to="/explorecourses"
                                 className="btn btn-primary"
                                 style={{
                                     background: "#fff",
@@ -298,7 +322,7 @@ export default function Contents() {
                                 }}
                             >
                                 Register Now
-                            </NavLink>
+                            </Link>
                         </div>
                     </div>
                 </div>
