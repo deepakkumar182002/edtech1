@@ -202,7 +202,7 @@ li{
   list-style: none;
 }
 .card-container{
-  position: absolute;
+  position: relative;
 }
 .nav-link:hover{
   color: #289bde;

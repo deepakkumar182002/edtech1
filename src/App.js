@@ -6,6 +6,7 @@ import Cloudcmp from "./components/Cloudcmp";
 import Softwaredev from "./components/Softwaredev";
 import "../src/App.css";
 import ExploreCourses from "./components/ExploreCourses";
+import Digitalmarketing from "./components/Digitalmarketing";
 
 function App() {
   
@@ -20,8 +21,9 @@ function App() {
           ;
           {/* <Route path="/*" element={<Page404 />} /> */}
           <Route path="/" element={<Contents />} />;
-          <Route path="/Cloudcomputing" element={<Cloudcmp />} />;
           <Route path="/Softwaredev" element={<Softwaredev />} />;
+          <Route path="/Cloudcomputing" element={<Cloudcmp />} />;
+          <Route path="/Digitalmarketing" element={<Digitalmarketing />} />;
           <Route path="/explorecourses"element={<ExploreCourses />} />
           {/* <Route path="/explorecourses" element={<Courses />} /> */}
           {/* <Route path="/courses/:name" element={<Courses />} />

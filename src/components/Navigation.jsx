@@ -40,7 +40,7 @@ export default function Navigation(Props) {
                     <li className="box col">
                       <Link className="dropdown-item" to="/softwaredev">Software Development</Link>
                       <Link className="dropdown-item" to="/Cloudcomputing">Cloud Computing</Link>
-                      <Link className="dropdown-item" to="/">digital marketing</Link>
+                      <Link className="dropdown-item" to="/Digitalmarketing">digital marketing</Link>
                       <Link className="dropdown-item" to="/">Syber Security</Link>
                       <Link className="dropdown-item" to="/">Data Science</Link>
                       <Link className="dropdown-item" to="/">UI & UX</Link>

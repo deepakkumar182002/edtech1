@@ -7,6 +7,21 @@ import compony3 from "../img/compony3.png";
 import compony4 from "../img/compony4.png";
 import compony5 from "../img/compony5.png";
 import compony6 from "../img/compony6.png";
+import card8 from "../img/card8.png";
+import card9 from "../img/card9.png";
+import card10 from "../img/card10.png";
+import card11 from "../img/card11.png";
+import card12 from "../img/card12.png";
+import card13 from "../img/card13.png";
+import profileimg from "../img/profileimg.png";
+import profileimg2 from "../img/profileimg2.png";
+import profileimg3 from "../img/profileimg3.png";
+import profileimg4 from "../img/profileimg4.png";
+import profileimg5 from "../img/profileimg5.png";
+import profileimg6 from "../img/profileimg6.png";
+import profileimg7 from "../img/profileimg7.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
 import couresTemplate from "../img/Rectangle 6-12.png";
 import "../App.css";
 import { NavLink } from "react-router-dom";
@@ -96,13 +111,333 @@ export default function Cloudcmp() {
                 </div>
                 <div className="col">
                     <h2 className="text-center my-5">Top Componies Hiring</h2>
-                    <div className="row d-flex" style={{ background: "#f0f0f0", borderRadius: "10px" }}>
-                        <img className="col m-2" src={compony} style={{ height: "50px", width: "100px" }} alt="" />
-                        <img className="col m-2" src={compony2} style={{ height: "50px", width: "100px" }} alt="" />
-                        <img className="col m-2" src={compony3} style={{ height: "50px", width: "100px" }} alt="" />
-                        <img className="col m-2" src={compony4} style={{ height: "50px", width: "100px" }} alt="" />
-                        <img className="col m-2" src={compony5} style={{ height: "50px", width: "100px" }} alt="" />
-                        <img className="col m-2" src={compony6} style={{ height: "50px", width: "100px" }} alt="" />
+                    <div className="row d-flex" style={{ background: "#e5f7f9d9", borderRadius: "10px" }}>
+                        <img className="col m-4" src={compony} style={{ height: "50px", width: "100px" }} alt="" />
+                        <img className="col m-4" src={compony2} style={{ height: "50px", width: "100px" }} alt="" />
+                        <img className="col m-4" src={compony3} style={{ height: "50px", width: "100px" }} alt="" />
+                        <img className="col m-4" src={compony4} style={{ height: "50px", width: "100px" }} alt="" />
+                        <img className="col m-4" src={compony5} style={{ height: "50px", width: "100px" }} alt="" />
+                        <img className="col m-4" src={compony6} style={{ height: "50px", width: "100px" }} alt="" />
+                    </div>
+                </div>
+            </div>
+            {/* same home data */}
+            <div className="meet-students my-5">
+                <h1 className="heading-text text-center">Meet Our Successfull Students</h1>
+                <p className="container text-muted text-center">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                    consequatur eveniet repellat provident facilis cupiditate
+                    perspiciatis accusamus. Repellendus, nesciunt quae.
+                </p>
+            </div>
+
+            <div className="row justify-content-center">
+                <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
+                    <img src={card8} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Alina </h5>
+                        <p className="text-muted">UX Designer</p>
+                        <NavLink to="/" className="btn btn-primary">
+                            Profile
+                        </NavLink>
+                    </div>
+                </div>
+                <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
+                    <img src={card9} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Christy</h5>
+                        <p className="text-muted">Mearn Stack Developer </p>
+                        <NavLink to="/" className="btn btn-primary">
+                            Profile
+                        </NavLink>
+                    </div>
+                </div>
+                <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
+                    <img src={card10} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Deniels</h5>
+                        <p className="text-muted">Graphics Designer</p>
+                        <NavLink to="/" className="btn btn-primary">
+                            Profile
+                        </NavLink>
+                    </div>
+                </div>
+                <div className="card m-1 mb-1" style={{ maxWidth: "17rem" }}>
+                    <img src={card11} className="card-img-top" alt="..." />
+                    <div className="card-body">
+                        <h5 className="card-title">Harward </h5>
+                        <p className="text-muted">Full Stack Developer</p>
+                        <NavLink to="/" className="btn btn-primary">
+                            Profile
+                        </NavLink>
+                    </div>
+                </div>
+            </div>
+            {/* students feedback */}
+            <div className="deadings my-5 text-center ">
+                <h1 className="heading-text">Some Student Feedback</h1>
+
+                <p className="text-muted">
+                    it is Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Officia fugit dolorem velit impedit laudantium delectus aperiam
+                    eveniet culpa atque ea. a long established fact that a reader will
+                    be distracted by the readable content of a page when looking at its
+                    layout.
+                </p>
+            </div>
+
+            <div className="row m-auto" id="horizontall">
+                <div className="revers-forword">
+                    <FontAwesomeIcon
+                        style={{ fontSize: "2rem", color: "#289bde" }}
+                        icon={faCircleChevronRight}
+                        beat
+                    />
+                    <FontAwesomeIcon
+                        style={{ fontSize: "2rem", color: "#289bde" }}
+                        icon={faCircleChevronRight}
+                        beat
+                    />
+                </div>
+                <div className="scroll-container">
+                    <div
+                        className="card m-1 animatecard"
+                        style={{ width: "26rem", height: "210px" }}
+                    >
+                        <div className="review-img d-flex justify-content-between m-3">
+                            <img src={card12} alt="" style={{ width: "2rem" }} />
+                            <img src={card13} alt="" />
+                        </div>
+                        <div
+                            className="card wraptext "
+                            style={{ outline: "none", border: "none" }}
+                        >
+                            <p className="text-muted p-1">
+                                {" "}
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+                                provident.
+                            </p>
+                            <div className="profile-img d-flex">
+                                <img src={profileimg} alt="" />
+                                <div className="text ml-2">
+                                    <h5 className="card-title " style={{ fontSize: "0.8rem" }}>
+                                        Card title
+                                    </h5>
+                                    <h6
+                                        className="card-subtitle mb-2 text-muted"
+                                        style={{ fontSize: "0.8rem" }}
+                                    >
+                                        Card subtitle
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        className="card m-1 animatecard"
+                        style={{ width: "26rem", height: "210px" }}
+                    >
+                        <div className="review-img d-flex justify-content-between m-3">
+                            <img src={card12} alt="" style={{ width: "2rem" }} />
+                            <img src={card13} alt="" />
+                        </div>
+                        <div
+                            className="card wraptext"
+                            style={{ outline: "none", border: "none" }}
+                        >
+                            <p className="text-muted p-1">
+                                {" "}
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+                                provident.
+                            </p>
+                            <div className="profile-img d-flex">
+                                <img src={profileimg2} alt="" />
+                                <div className="text ml-2">
+                                    <h5 className="card-title " style={{ fontSize: "0.8rem" }}>
+                                        Card title
+                                    </h5>
+                                    <h6
+                                        className="card-subtitle mb-2 text-muted"
+                                        style={{ fontSize: "0.8rem" }}
+                                    >
+                                        Card subtitle
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        className="card m-1 animatecard"
+                        style={{ width: "26rem", height: "210px" }}
+                    >
+                        <div className="review-img d-flex justify-content-between m-3">
+                            <img src={card12} alt="" style={{ width: "2rem" }} />
+                            <img src={card13} alt="" />
+                        </div>
+                        <div
+                            className="card wraptext"
+                            style={{ outline: "none", border: "none" }}
+                        >
+                            <p className="text-muted p-1">
+                                {" "}
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+                                provident.
+                            </p>
+                            <div className="profile-img d-flex">
+                                <img src={profileimg3} alt="" />
+                                <div className="text ml-2">
+                                    <h5 className="card-title " style={{ fontSize: "0.8rem" }}>
+                                        Card title
+                                    </h5>
+                                    <h6
+                                        className="card-subtitle mb-2 text-muted"
+                                        style={{ fontSize: "0.8rem" }}
+                                    >
+                                        Card subtitle
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        className="card m-1 animatecard"
+                        style={{ width: "26rem", height: "210px" }}
+                    >
+                        <div className="review-img d-flex justify-content-between m-3">
+                            <img src={card12} alt="" style={{ width: "2rem" }} />
+                            <img src={card13} alt="" />
+                        </div>
+                        <div
+                            className="card wraptext"
+                            style={{ outline: "none", border: "none" }}
+                        >
+                            <p className="text-muted p-1">
+                                {" "}
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+                                provident.
+                            </p>
+                            <div className="profile-img d-flex">
+                                <img src={profileimg4} alt="" />
+                                <div className="text ml-2">
+                                    <h5 className="card-title " style={{ fontSize: "0.8rem" }}>
+                                        Card title
+                                    </h5>
+                                    <h6
+                                        className="card-subtitle mb-2 text-muted"
+                                        style={{ fontSize: "0.8rem" }}
+                                    >
+                                        Card subtitle
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        className="card m-1 animatecard"
+                        style={{ width: "26rem", height: "210px" }}
+                    >
+                        <div className="review-img d-flex justify-content-between m-3">
+                            <img src={card12} alt="" style={{ width: "2rem" }} />
+                            <img src={card13} alt="" />
+                        </div>
+                        <div
+                            className="card wraptext"
+                            style={{ outline: "none", border: "none" }}
+                        >
+                            <p className="text-muted p-1">
+                                {" "}
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+                                provident.
+                            </p>
+                            <div className="profile-img d-flex">
+                                <img src={profileimg5} alt="" />
+                                <div className="text ml-2">
+                                    <h5 className="card-title " style={{ fontSize: "0.8rem" }}>
+                                        Card title
+                                    </h5>
+                                    <h6
+                                        className="card-subtitle mb-2 text-muted"
+                                        style={{ fontSize: "0.8rem" }}
+                                    >
+                                        Card subtitle
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        className="card m-1 animatecard"
+                        style={{ width: "26rem", height: "210px" }}
+                    >
+                        <div className="review-img d-flex justify-content-between m-3">
+                            <img src={card12} alt="" style={{ width: "2rem" }} />
+                            <img src={card13} alt="" />
+                        </div>
+                        <div
+                            className="card wraptext"
+                            style={{ outline: "none", border: "none" }}
+                        >
+                            <p className="text-muted p-1">
+                                {" "}
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+                                provident.
+                            </p>
+                            <div className="profile-img d-flex">
+                                <img src={profileimg6} alt="" />
+                                <div className="text ml-2">
+                                    <h5 className="card-title " style={{ fontSize: "0.8rem" }}>
+                                        Card title
+                                    </h5>
+                                    <h6
+                                        className="card-subtitle mb-2 text-muted"
+                                        style={{ fontSize: "0.8rem" }}
+                                    >
+                                        Card subtitle
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        className="card m-1 animatecard"
+                        style={{ width: "26rem", height: "210px" }}
+                    >
+                        <div className="review-img d-flex justify-content-between m-3">
+                            <img src={card12} alt="" style={{ width: "2rem" }} />
+                            <img src={card13} alt="" />
+                        </div>
+                        <div
+                            className="card wraptext"
+                            style={{ outline: "none", border: "none" }}
+                        >
+                            <p className="text-muted p-1">
+                                {" "}
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem
+                                ipsum dolor sit amet consectetur adipisicing elit. Ducimus,
+                                provident.
+                            </p>
+                            <div className="profile-img d-flex">
+                                <img src={profileimg7} alt="" />
+                                <div className="text ml-2">
+                                    <h5 className="card-title " style={{ fontSize: "0.8rem" }}>
+                                        Card title
+                                    </h5>
+                                    <h6
+                                        className="card-subtitle mb-2 text-muted"
+                                        style={{ fontSize: "0.8rem" }}
+                                    >
+                                        Card subtitle
+                                    </h6>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

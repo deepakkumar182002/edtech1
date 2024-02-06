@@ -28,19 +28,19 @@ import { NavLink } from "react-router-dom";
 import { GrCertificate, GrGlobe } from "react-icons/gr";
 import { MdOutlineTouchApp } from "react-icons/md";
 // import { CiGlobe } from "react-icons/ci";
-export default function Softwaredev() {
+export default function Digitalmarketing() {
     // const CloudParam = useParams();
 
     return (
         <div className="container">
             <NavLink to="/" className="text-muted">Home&gt;</NavLink>
-            <NavLink to="/Cloudcmp" className="text-muted">Software development</NavLink>
+            <NavLink to="/Cloudcmp" className="text-muted">Cloudcmp</NavLink>
             <div className="row d-flex">
                 <div className="col">
                     <img src={logo} alt="" className="logo h-20 w-10 my-3" />
-                    <h1>Certification in Software development</h1>
+                    <h1>Certification in Digital Marketing</h1>
                     <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
-                    <p>Embark on a transformative journey with our Software Development Course! Dive into a comprehensive program designed to equip you with the skills needed to thrive in the dynamic world of software development. From mastering programming languages to understanding industry best practices, our course offers hands-on experience and expert guidance. Elevate your career prospects by enrolling today and unlocking a world of opportunities in the rapidly evolving field of software development. Your future in tech starts here!</p>
+                    <p>Unlock boundless knowledge with our cutting-edge online courses! Elevate your skills and career prospects through interactive lessons, expert-led webinars, and engaging content. Our digital platform offers a seamless learning experience, tailored to your pace and preferences. Dive into diverse subjects, from business to technology, and gain a competitive edge. Join a vibrant community of learners and embark on a transformative educational journey. Start your success story today with our online courses  where knowledge meets convenience, and excellence is just a click away!</p>
                     <div className="d-flex align-items-center">
                         <h5 className="text-muted ">Certificate Assign with </h5>
                         {/* <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" />
@@ -76,35 +76,35 @@ export default function Softwaredev() {
                 <h2 className="d-flex justify-content-center m-1 align-items-center" style={{ background: "#289bde", color: "#fff", height: "60px" }}>Why Join Program ?</h2>
                 <div className="row align-items-start justify-content-center">
 
-                    <div className="box m-3" style={{ height: "200px" }}>
+                    <div className="box" style={{ height: "200px" }}>
                         <GrCertificate style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                         <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
                             <div className="card-body">
-                                <h5 className="card-title">Promising Career in Software development</h5>
-                                <p className="card-text">Develop a lucrative career in the software development, which boasts some of the highest-paying IT job roles</p>
+                                <h5 className="card-title">Promising Career in Digital Marketing</h5>
+                                <p className="card-text">Develop a lucrative career in the cloud domain, which boasts some of the highest-paying IT job roles</p>
 
                             </div>
                         </div>
                     </div>
 
-                    <div className="box m-3" style={{ height: "200px" }}>
+                    <div className="box" style={{ height: "200px" }}>
                         <MdOutlineTouchApp style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                         <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
-                            <div className="card-body" style={{ height: "196px" }}>
-                                <h5 className="card-title" >Caltech Campus Visit Event</h5>
+                            <div className="card-body" style={{height: "170px" }}>
+                                <h5 className="card-title">Caltech Campus Visit Event</h5>
 
                                 <p className="card-text">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
-
-
+                                
                             </div>
                         </div>
                     </div>
-                    <div className="box m-3" style={{ height: "200px" }}>
+                    <div className="box" style={{height: "200px" }}>
                         <GrGlobe style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                         <div className="card ml-2" style={{ width: "20rem", borderBottom: "5px solid#289bde" }}>
-                            <div className="card-body" style={{ height: "195px" }}>
+                            <div className="card-body" style={{height: "170px" }}>
                                 <h5 className="card-title">Caltech&apos;s Academic Excellence</h5>
                                 <p className="card-text">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
+
                             </div>
                         </div>
                     </div>
@@ -120,9 +120,7 @@ export default function Softwaredev() {
                         <img className="col m-4" src={compony6} style={{ height: "50px", width: "100px" }} alt="" />
                     </div>
                 </div>
-
-            </div>
-            {/* same home data */}
+                {/* same home data */}
             <div className="meet-students my-5">
                 <h1 className="heading-text text-center">Meet Our Successfull Students</h1>
                 <p className="container text-muted text-center">
@@ -442,6 +440,7 @@ export default function Softwaredev() {
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     );
 }
