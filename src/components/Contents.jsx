@@ -683,7 +683,7 @@ export default function Contents() {
                 </div>
                 <div className="row d-flex flex-wrap" style={{ background: "#272727", color: "#FFF", display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
                    
-                    <div className="col  flex-grow-3" style={{background:"orange",padding: "20px",position:"relative",width:"200px" }}>
+                    <div className="col  flex-grow-3" style={{background:"#289bde",padding: "20px",position:"relative",width:"200px" }}>
                         <h1 className="text ">Ed Tech</h1>
                         <p className="footer-text">Office41, Noida, Delhi, India Lorem ipsum dolor sit</p>
                         <p className="footer-text">, India Lorem ipsum dolor sit amet </p>
