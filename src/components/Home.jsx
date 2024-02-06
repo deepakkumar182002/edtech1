@@ -38,11 +38,12 @@ import {
 } from "react-icons/fa6";
 import Carousel from "./Carousel";
 
-export default function Contents() {
+export default function Home() {
     return (
         <React.Fragment>
             <Carousel />
-            <div className="container">
+            
+            <div className="container-fluid">
                 <div className="deadings my-5 text-center ">
                     <h1 className="heading-text">Discover Our Popular </h1>
                     <h1 className="heading-text">Courses</h1>
@@ -253,7 +254,7 @@ export default function Contents() {
                 </button>
 
                 <div
-                    className="row mb-3 mt-5"
+                    className="row mb-3 m-1 my-5"
                     style={{ maxWidth: "1800px", background: "#e7f1f5" }}
                 >
                     <div className="row g-0">
@@ -296,7 +297,7 @@ export default function Contents() {
                 <br />
                 <br />
                 <div
-                    className="row justify-content-center"
+                    className="row justify-content-center m-1"
                     style={{ background: "#289bde", color: "#fff" }}
                 >
                     <div className="row" style={{ maxWidth: "800px" }}>
@@ -328,7 +329,7 @@ export default function Contents() {
                 </div>
 
                 <div className="meet-students my-5">
-                    <h1 className="heading-text">Meet Our Successfull Students</h1>
+                    <h1 className="heading-text text-center">Meet Our Successfull Students</h1>
                     <p className="text-muted">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
                         consequatur eveniet repellat provident facilis cupiditate
@@ -681,36 +682,41 @@ export default function Contents() {
                         <img src={compony6} className="pt-3" alt="" />
                     </div>
                 </div>
-                <div className="row d-flex flex-wrap" style={{ background: "#272727", color: "#FFF", display: "flex", justifyContent: "space-around", flexWrap: "wrap" }}>
-                   
-                    <div className="col  flex-grow-3" style={{background:"#289bde",padding: "20px",position:"relative",width:"200px" }}>
-                        <h1 className="text ">Ed Tech</h1>
-                        <p className="footer-text">Office41, Noida, Delhi, India Lorem ipsum dolor sit</p>
-                        <p className="footer-text">, India Lorem ipsum dolor sit amet </p>
-                        <p className="footer-text">Privacy Policy | Tearm of use</p>
-                    </div>
+                <footer style={{ background: "#272727", color: "#FFF"}}>
 
-                    <div className="p-2 bd-highlight">
-                        <li className="p-2 bd-highlight" style={{ display: "grid", placeItems: "center" }}>
-                            <Link>Home</Link>
-                            <Link>About</Link>
-                            <Link>Success</Link>
-                            <Link>Contact</Link>
-                        </li>
-                        <li className="p-2 bd-highlight" style={{ display: "grid", placeItems: "center" }}>
-                            <Link>All Courses</Link>
-                            <Link>All Courses</Link>
-                            <Link>All Courses</Link>
-                            <Link>All Courses</Link>
-                        </li>
-                        <li className="p-2 bd-highlight" style={{ position: "relative", top: "-20px" }}>
+                    <div className="row d-flex m-2">
+
+                        <div className="footer-title-name-box" style={{ background: "", padding: "20px", position: "relative", width: "auto" }}>
+                            <h1 className="text ">Ed Tech</h1>
+                            <p className="footer-text">Ed Tech Pvt ltd, Noida, Delhi, India Lorem ipsum dolor sit</p>
+                            <p className="footer-text">India, Uttar Pradesh Agra (282007) </p>
+                            <p className="footer-text">Privacy Policy | Tearm of use |</p>
+                        </div>
+
+                        <div className="Footer-All-Links d-flex flex-row p-3 mx-3" style={{ position: "relative" }}>
+                            <li className="p-2 bd-highlight" style={{ display: "grid", placeItems: "center"}}>
+                                <Link style={{color:"#fff"}}>Home</Link>
+                                <Link style={{color:"#fff"}}>About</Link>
+                                <Link style={{color:"#fff"}}>Success</Link>
+                                <Link style={{color:"#fff"}}>Contact</Link>
+                            </li>
+                            <li className="p-2 bd-highlight mx-3" style={{ display: "grid", placeItems: "center" }}>
+                                <Link style={{color:"#fff"}}>All Courses</Link>
+                                <Link style={{color:"#fff"}}>Services</Link>
+                                <Link style={{color:"#fff"}}>Address</Link>
+                                <Link style={{color:"#fff"}}>Help</Link>
+                            </li>
+                        </div>
+                    </div>
+                    <div className="social-midea" style={{position:"relative"}}>
+                        <li className="col" style={{ position: "relative", top: "-20px" }}>
                             <FaLinkedin style={{ margin: "5px", fontSize: "1.5rem" }} />
                             <FaInstagram style={{ margin: "5px", fontSize: "1.5rem" }} />
                             <FaSquareXTwitter style={{ margin: "5px", fontSize: "1.5rem" }} />
                             <FaSquareFacebook style={{ margin: "5px", fontSize: "1.5rem" }} />
                         </li>
                     </div>
-                </div>
+                </footer>
             </div>
         </React.Fragment>
     );

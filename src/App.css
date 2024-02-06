@@ -99,6 +99,9 @@ li .nav-NavLink {
     position: relative;
     left: -20px;
   }
+  .footer-title-name-box{
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -116,6 +119,9 @@ li .nav-NavLink {
   }
   .getstarted {
     font-size: 30px;
+  }
+  .footer-title-name-box{
+    text-align: center;
   }
 }
 
