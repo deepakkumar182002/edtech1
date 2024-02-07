@@ -23,7 +23,8 @@ li .nav-NavLink {
   text-decoration: none;
 }
 ::-webkit-scrollbar {
-  background: none;
+  /* background: transparent; */
+  width: 0px;
 }
 #horizontall {
   width: 100%;
@@ -207,8 +208,8 @@ li .nav-NavLink {
 li{
   list-style: none;
 }
-.card-container{
-  position: relative;
+.fetch-cards{
+  position: absolute;
 }
 .nav-link:hover{
   color: #289bde;

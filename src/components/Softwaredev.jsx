@@ -20,11 +20,17 @@ import profileimg4 from "../img/profileimg4.png";
 import profileimg5 from "../img/profileimg5.png";
 import profileimg6 from "../img/profileimg6.png";
 import profileimg7 from "../img/profileimg7.png";
+import {
+    FaLinkedin,
+    FaInstagram,
+    FaSquareXTwitter,
+    FaSquareFacebook,
+} from "react-icons/fa6";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
 import couresTemplate from "../img/Rectangle 6-12.png";
 import "../App.css";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import { GrCertificate, GrGlobe } from "react-icons/gr";
 import { MdOutlineTouchApp } from "react-icons/md";
 // import { CiGlobe } from "react-icons/ci";
@@ -32,150 +38,151 @@ export default function Softwaredev() {
     // const CloudParam = useParams();
 
     return (
-        <div className="container">
-            <NavLink to="/" className="text-muted">Home&gt;</NavLink>
-            <NavLink to="/Cloudcmp" className="text-muted">Software development</NavLink>
-            <div className="row d-flex">
-                <div className="col">
-                    <img src={logo} alt="" className="logo h-20 w-10 my-3" />
-                    <h1>Certification in Software development</h1>
-                    <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
-                    <p>Embark on a transformative journey with our Software Development Course! Dive into a comprehensive program designed to equip you with the skills needed to thrive in the dynamic world of software development. From mastering programming languages to understanding industry best practices, our course offers hands-on experience and expert guidance. Elevate your career prospects by enrolling today and unlocking a world of opportunities in the rapidly evolving field of software development. Your future in tech starts here!</p>
-                    <div className="d-flex align-items-center">
-                        <h5 className="text-muted ">Certificate Assign with </h5>
-                        {/* <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" />
+        <>
+            <div className="container">
+                <NavLink to="/" className="text-muted">Home&gt;</NavLink>
+                <NavLink to="/Softwaredev" className="text-muted">Software development</NavLink>
+                <div className="row d-flex">
+                    <div className="col">
+                        <img src={logo} alt="" className="logo h-20 w-10 my-3" />
+                        <h1>Certification in Software development</h1>
+                        <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
+                        <p>Embark on a transformative journey with our Software Development Course! Dive into a comprehensive program designed to equip you with the skills needed to thrive in the dynamic world of software development. From mastering programming languages to understanding industry best practices, our course offers hands-on experience and expert guidance. Elevate your career prospects by enrolling today and unlocking a world of opportunities in the rapidly evolving field of software development. Your future in tech starts here!</p>
+                        <div className="d-flex align-items-center">
+                            <h5 className="text-muted ">Certificate Assign with </h5>
+                            {/* <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" />
                         <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" /> */}
+                        </div>
+                        <div className="d-flex align-items-center my-4">
+                            <button type="button" id="ApllyNowBtn" className="btn ">Apply Now</button>
+                            <button type="button" className="ApllyNowBtn btn mx-5" style={{ border: "1px solid #289bde", color: "#289bde", background: "#fff" }}>Download Syllabus</button>
+                        </div>
+
                     </div>
-                    <div className="d-flex align-items-center my-4">
-                        <button type="button" id="ApllyNowBtn" className="btn ">Apply Now</button>
-                        <button type="button" className="ApllyNowBtn btn mx-5" style={{ border: "1px solid #289bde", color: "#289bde", background: "#fff" }}>Download Syllabus</button>
+                    <div className="col d-flex align-items-center justify-content-center" style={{ background: "#ebebeb", borderRadius: "10px" }}>
+                        <img src={couresTemplate} style={{ height: "400px", width: "500px" }} alt="" className="course-template" />
                     </div>
+                </div>
+                <br />
+                <hr />
+                <div className="d-flex justify-content-center  my-5">
+                    <div className="col">
+                        <h6 className="text-muted">Next Prgram</h6>
+                        <h4>7 Feb</h4>
+                    </div>
+                    <div className="col">
+                        <h6 className="text-muted">Prgram Duration</h6>
+                        <h4>5 Mounths</h4>
+                    </div>
+                    <div className="col">
+                        <h6 className="text-muted">Learning Formate</h6>
+                        <h4>Online</h4>
+                    </div>
+                </div>
+                <div className="my-5">
+                    <h2 className="d-flex justify-content-center m-1 align-items-center" style={{ background: "#289bde", color: "#fff", height: "60px" }}>Why Join Program ?</h2>
+                    <div className="row align-items-start justify-content-center">
 
-                </div>
-                <div className="col d-flex align-items-center justify-content-center" style={{ background: "#ebebeb", borderRadius: "10px" }}>
-                    <img src={couresTemplate} style={{ height: "400px", width: "500px" }} alt="" className="course-template" />
-                </div>
-            </div>
-            <br />
-            <hr />
-            <div className="d-flex justify-content-center  my-5">
-                <div className="col">
-                    <h6 className="text-muted">Next Prgram</h6>
-                    <h4>7 Feb</h4>
-                </div>
-                <div className="col">
-                    <h6 className="text-muted">Prgram Duration</h6>
-                    <h4>5 Mounths</h4>
-                </div>
-                <div className="col">
-                    <h6 className="text-muted">Learning Formate</h6>
-                    <h4>Online</h4>
-                </div>
-            </div>
-            <div className="my-5">
-                <h2 className="d-flex justify-content-center m-1 align-items-center" style={{ background: "#289bde", color: "#fff", height: "60px" }}>Why Join Program ?</h2>
-                <div className="row align-items-start justify-content-center">
+                        <div className="box m-3" style={{ height: "200px" }}>
+                            <GrCertificate style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
+                            <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
+                                <div className="card-body">
+                                    <h5 className="card-title">Promising Career in Software development</h5>
+                                    <p className="card-text">Develop a lucrative career in the software development, which boasts some of the highest-paying IT job roles</p>
 
-                    <div className="box m-3" style={{ height: "200px" }}>
-                        <GrCertificate style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
-                        <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
-                            <div className="card-body">
-                                <h5 className="card-title">Promising Career in Software development</h5>
-                                <p className="card-text">Develop a lucrative career in the software development, which boasts some of the highest-paying IT job roles</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div className="box m-3" style={{ height: "200px" }}>
+                            <MdOutlineTouchApp style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
+                            <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
+                                <div className="card-body" style={{ height: "196px" }}>
+                                    <h5 className="card-title" >Caltech Campus Visit Event</h5>
+
+                                    <p className="card-text">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div className="box m-3" style={{ height: "200px" }}>
+                            <GrGlobe style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
+                            <div className="card ml-2" style={{ width: "20rem", borderBottom: "5px solid#289bde" }}>
+                                <div className="card-body" style={{ height: "195px" }}>
+                                    <h5 className="card-title">Caltech&apos;s Academic Excellence</h5>
+                                    <p className="card-text">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    <div className="box m-3" style={{ height: "200px" }}>
-                        <MdOutlineTouchApp style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
-                        <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
-                            <div className="card-body" style={{ height: "196px" }}>
-                                <h5 className="card-title" >Caltech Campus Visit Event</h5>
-
-                                <p className="card-text">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
-
-
-                            </div>
+                    <div className="col">
+                        <h2 className="text-center my-5">Top Componies Hiring</h2>
+                        <div className="row d-flex" style={{ background: "#e5f7f9d9", borderRadius: "10px" }}>
+                            <img className="col m-4" src={compony} style={{ height: "50px", width: "100px" }} alt="" />
+                            <img className="col m-4" src={compony2} style={{ height: "50px", width: "100px" }} alt="" />
+                            <img className="col m-4" src={compony3} style={{ height: "50px", width: "100px" }} alt="" />
+                            <img className="col m-4" src={compony4} style={{ height: "50px", width: "100px" }} alt="" />
+                            <img className="col m-4" src={compony5} style={{ height: "50px", width: "100px" }} alt="" />
+                            <img className="col m-4" src={compony6} style={{ height: "50px", width: "100px" }} alt="" />
                         </div>
                     </div>
-                    <div className="box m-3" style={{ height: "200px" }}>
-                        <GrGlobe style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
-                        <div className="card ml-2" style={{ width: "20rem", borderBottom: "5px solid#289bde" }}>
-                            <div className="card-body" style={{ height: "195px" }}>
-                                <h5 className="card-title">Caltech&apos;s Academic Excellence</h5>
-                                <p className="card-text">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
-                            </div>
+
+                </div>
+                {/* same home data */}
+                <div className="meet-students my-5">
+                    <h1 className="heading-text text-center">Meet Our Successfull Students</h1>
+                    <p className="container text-muted text-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                        consequatur eveniet repellat provident facilis cupiditate
+                        perspiciatis accusamus. Repellendus, nesciunt quae.
+                    </p>
+                </div>
+
+                <div className="row justify-content-center">
+                    <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
+                        <img src={card8} className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Alina </h5>
+                            <p className="text-muted">UX Designer</p>
+                            <NavLink to="/" className="btn btn-primary">
+                                Profile
+                            </NavLink>
+                        </div>
+                    </div>
+                    <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
+                        <img src={card9} className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Christy</h5>
+                            <p className="text-muted">Mearn Stack Developer </p>
+                            <NavLink to="/" className="btn btn-primary">
+                                Profile
+                            </NavLink>
+                        </div>
+                    </div>
+                    <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
+                        <img src={card10} className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Deniels</h5>
+                            <p className="text-muted">Graphics Designer</p>
+                            <NavLink to="/" className="btn btn-primary">
+                                Profile
+                            </NavLink>
+                        </div>
+                    </div>
+                    <div className="card m-1 mb-1" style={{ maxWidth: "17rem" }}>
+                        <img src={card11} className="card-img-top" alt="..." />
+                        <div className="card-body">
+                            <h5 className="card-title">Harward </h5>
+                            <p className="text-muted">Full Stack Developer</p>
+                            <NavLink to="/" className="btn btn-primary">
+                                Profile
+                            </NavLink>
                         </div>
                     </div>
                 </div>
-                <div className="col">
-                    <h2 className="text-center my-5">Top Componies Hiring</h2>
-                    <div className="row d-flex" style={{ background: "#e5f7f9d9", borderRadius: "10px"}}>
-                        <img className="col m-4" src={compony} style={{  height: "50px", width: "100px" }} alt="" />
-                        <img className="col m-4" src={compony2} style={{ height: "50px", width: "100px" }} alt="" />
-                        <img className="col m-4" src={compony3} style={{ height: "50px", width: "100px" }} alt="" />
-                        <img className="col m-4" src={compony4} style={{ height: "50px", width: "100px" }} alt="" />
-                        <img className="col m-4" src={compony5} style={{ height: "50px", width: "100px" }} alt="" />
-                        <img className="col m-4" src={compony6} style={{ height: "50px", width: "100px" }} alt="" />
-                    </div>
-                </div>
-
-            </div>
-            {/* same home data */}
-            <div className="meet-students my-5">
-                <h1 className="heading-text text-center">Meet Our Successfull Students</h1>
-                <p className="container text-muted text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                    consequatur eveniet repellat provident facilis cupiditate
-                    perspiciatis accusamus. Repellendus, nesciunt quae.
-                </p>
-            </div>
-
-            <div className="row justify-content-center">
-                <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
-                    <img src={card8} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Alina </h5>
-                        <p className="text-muted">UX Designer</p>
-                        <NavLink to="/" className="btn btn-primary">
-                            Profile
-                        </NavLink>
-                    </div>
-                </div>
-                <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
-                    <img src={card9} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Christy</h5>
-                        <p className="text-muted">Mearn Stack Developer </p>
-                        <NavLink to="/" className="btn btn-primary">
-                            Profile
-                        </NavLink>
-                    </div>
-                </div>
-                <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
-                    <img src={card10} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Deniels</h5>
-                        <p className="text-muted">Graphics Designer</p>
-                        <NavLink to="/" className="btn btn-primary">
-                            Profile
-                        </NavLink>
-                    </div>
-                </div>
-                <div className="card m-1 mb-1" style={{ maxWidth: "17rem" }}>
-                    <img src={card11} className="card-img-top" alt="..." />
-                    <div className="card-body">
-                        <h5 className="card-title">Harward </h5>
-                        <p className="text-muted">Full Stack Developer</p>
-                        <NavLink to="/" className="btn btn-primary">
-                            Profile
-                        </NavLink>
-                    </div>
-                </div>
-            </div>
-            {/* students feedback */}
-            <div className="deadings my-5 text-center ">
+                {/* students feedback */}
+                <div className="deadings my-5 text-center ">
                     <h1 className="heading-text">Some Student Feedback</h1>
 
                     <p className="text-muted">
@@ -442,6 +449,52 @@ export default function Softwaredev() {
                         </div>
                     </div>
                 </div>
-        </div>
+            </div>
+            <footer style={{ background: "#289bde", color: "#FFF" }}>
+
+                <div className="row d-flex m-2">
+
+                    <div className="footer-title-name-box" style={{ background: "", padding: "20px", position: "relative", width: "auto" }}>
+                        <h1 className="text ">Ed Tech</h1>
+                        <p className="footer-text">Ed Tech Pvt ltd, Noida, Delhi, India Lorem ipsum dolor sit</p>
+                        <p className="footer-text">India, Uttar Pradesh Agra (282007) </p>
+                        <p className="footer-text">Privacy Policy | Tearm of use |</p>
+                    </div>
+
+                    <div className="Footer-All-Links d-flex flex-row p-3 mx-3" style={{ position: "relative" }}>
+                        <li className="p-2 bd-highlight" style={{ display: "grid", placeItems: "center" }}>
+                            <Link to='/' style={{ color: "#fff" }}>Home</Link>
+                            <Link to='/About' style={{ color: "#fff" }}>About</Link>
+                            <Link to='/Success' style={{ color: "#fff" }}>Success</Link>
+                            <Link to='/Contact' style={{ color: "#fff" }}>Contact</Link>
+                        </li>
+                        <li className="p-2 bd-highlight mx-3" style={{ display: "grid", placeItems: "center" }}>
+                            <Link to='/explorecourses' style={{ color: "#fff" }}>All Courses</Link>
+                            <Link to='/Service' style={{ color: "#fff" }}>Services</Link>
+                            <Link to='/Address' style={{ color: "#fff" }}>Address</Link>
+                            <Link to='/Help' style={{ color: "#fff" }}>Help</Link>
+                        </li>
+                    </div>
+                </div>
+                <div className="social-midea" style={{ position: "relative" }}>
+                    <li className="col" style={{ position: "relative", top: "-20px" }}>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com'>
+                            <FaLinkedin style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com">
+                            <FaInstagram style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com">
+                            <FaSquareXTwitter style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
+                            <FaSquareFacebook style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                        </a>
+                    </li>
+                    {/* <img src={logo} height={50} width={50} className="p-2" alt="logo" /> */}
+
+                </div>
+            </footer>
+        </>
     );
 }

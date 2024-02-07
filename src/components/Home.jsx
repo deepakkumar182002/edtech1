@@ -1,4 +1,5 @@
 import React from "react";
+// import logo from "../img/logo2.jpg";
 import card1 from "../img/card1.png";
 import card2 from "../img/card2.png";
 import card3 from "../img/card3.png";
@@ -42,7 +43,7 @@ export default function Home() {
     return (
         <React.Fragment>
             <Carousel />
-            
+
             <div className="container-fluid">
                 <div className="deadings my-5 text-center ">
                     <h1 className="heading-text">Discover Our Popular </h1>
@@ -682,7 +683,9 @@ export default function Home() {
                         <img src={compony6} className="pt-3" alt="" />
                     </div>
                 </div>
-                <footer style={{ background: "#272727", color: "#FFF"}}>
+            </div>
+                {/* <footer style={{ background: "#272727", color: "#FFF" }}> */}
+                <footer style={{ background: "#289bde", color: "#FFF" }}>
 
                     <div className="row d-flex m-2">
 
@@ -694,30 +697,39 @@ export default function Home() {
                         </div>
 
                         <div className="Footer-All-Links d-flex flex-row p-3 mx-3" style={{ position: "relative" }}>
-                            <li className="p-2 bd-highlight" style={{ display: "grid", placeItems: "center"}}>
-                                <Link style={{color:"#fff"}}>Home</Link>
-                                <Link style={{color:"#fff"}}>About</Link>
-                                <Link style={{color:"#fff"}}>Success</Link>
-                                <Link style={{color:"#fff"}}>Contact</Link>
+                            <li className="p-2 bd-highlight" style={{ display: "grid", placeItems: "center" }}>
+                                <Link to='/' style={{ color: "#fff" }}>Home</Link>
+                                <Link to='/About' style={{ color: "#fff" }}>About</Link>
+                                <Link to='/Success' style={{ color: "#fff" }}>Success</Link>
+                                <Link to='/Contact' style={{ color: "#fff" }}>Contact</Link>
                             </li>
                             <li className="p-2 bd-highlight mx-3" style={{ display: "grid", placeItems: "center" }}>
-                                <Link style={{color:"#fff"}}>All Courses</Link>
-                                <Link style={{color:"#fff"}}>Services</Link>
-                                <Link style={{color:"#fff"}}>Address</Link>
-                                <Link style={{color:"#fff"}}>Help</Link>
+                                <Link to='/explorecourses' style={{ color: "#fff" }}>All Courses</Link>
+                                <Link to='/Service' style={{ color: "#fff" }}>Services</Link>
+                                <Link to='/Address' style={{ color: "#fff" }}>Address</Link>
+                                <Link to='/Help' style={{ color: "#fff" }}>Help</Link>
                             </li>
                         </div>
                     </div>
-                    <div className="social-midea" style={{position:"relative"}}>
+                    <div className="social-midea" style={{ position: "relative" }}>
                         <li className="col" style={{ position: "relative", top: "-20px" }}>
-                            <FaLinkedin style={{ margin: "5px", fontSize: "1.5rem" }} />
-                            <FaInstagram style={{ margin: "5px", fontSize: "1.5rem" }} />
-                            <FaSquareXTwitter style={{ margin: "5px", fontSize: "1.5rem" }} />
-                            <FaSquareFacebook style={{ margin: "5px", fontSize: "1.5rem" }} />
+                            <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com'>
+                                <FaLinkedin style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com">
+                                <FaInstagram style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com">
+                                <FaSquareXTwitter style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                            </a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
+                                <FaSquareFacebook style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                            </a>
                         </li>
+                        {/* <img src={logo} height={50} width={50} className="p-2" alt="logo" /> */}
+
                     </div>
                 </footer>
-            </div>
         </React.Fragment>
     );
 }

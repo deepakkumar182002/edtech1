@@ -17,7 +17,7 @@ export default function ExploreCourses() {
         <div>
             <div className="container-fluid">
 
-                <h1 className="text-center my-3">Get Certified, Get Ahead with Our Programs</h1>
+                <h1 className="text-center my-3">Get Certified, And Get Ahead with Our Programs</h1>
                 <h6 className="text-muted text-center my-2">Learn from global experts and get certified by the world&apos;s leading universities</h6>
                 <div className="d-flex flex-row">
                     <div className="nav nav-pills mb-3 list-group mx-1 my-5 col ">
@@ -37,7 +37,7 @@ export default function ExploreCourses() {
                     </div>
                     <div className="box my-5 p-3 col-md-10">
 
-                        <div className={getcard === 2 ? "card-container d-flex row fade show active" : "card-container d-flex row fade"}>
+                        <div className={getcard === 2 ? "fetch-cards d-flex row fade show active" : "fetch-cards d-flex row fade"}>
                             <div className="card allcard m-2" style={{ width: "18rem" }}>
                                 <img src={card} className="card-img-top" style={{ height: "200px" }} alt="..." />
                                 <div className="card-body">
@@ -95,7 +95,7 @@ export default function ExploreCourses() {
                                 </div>
                             </div>
                         </div>
-                        <div className={getcard === 3 ? "card-container d-flex row fade show active" : "card-container d-flex row fade "}>
+                        <div className={getcard === 3 ? "fetch-cards d-flex row fade show active" : "fetch-cards d-flex row fade "}>
                             <div className="card allcard m-2" style={{ width: "18rem" }}>
                                 <img src={card} className="card-img-top" style={{ height: "200px" }} alt="..." />
                                 <div className="card-body">
@@ -113,7 +113,7 @@ export default function ExploreCourses() {
                                 </div>
                             </div>
                         </div>
-                        <div className={getcard === 4 ? "card-container d-flex row fade show active" : "card-container d-flex row fade "}>
+                        <div className={getcard === 4 ? "fetch-cards d-flex row fade show active" : "fetch-cards d-flex row fade "}>
                             <div className="card allcard m-2" style={{ width: "18rem" }}>
                                 <img src={card} className="card-img-top" style={{ height: "200px" }} alt="..." />
                                 <div className="card-body">

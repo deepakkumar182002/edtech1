@@ -41,7 +41,7 @@ export default function Navigation(Props) {
                       <Link className="dropdown-item" to="/softwaredev">Software Development</Link>
                       <Link className="dropdown-item" to="/Cloudcomputing">Cloud Computing</Link>
                       <Link className="dropdown-item" to="/Digitalmarketing">digital marketing</Link>
-                      <Link className="dropdown-item" to="/">Syber Security</Link>
+                      <Link className="dropdown-item" to="/">Cyber Security</Link>
                       <Link className="dropdown-item" to="/">Data Science</Link>
                       <Link className="dropdown-item" to="/">UI & UX</Link>
                       <Link className="dropdown-item" to="/">IOT / Embedded</Link>
