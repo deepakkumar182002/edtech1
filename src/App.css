@@ -103,6 +103,12 @@ li .nav-NavLink {
   .footer-title-name-box{
     text-align: center;
   }
+  .request-callback-container{
+    scale: 50%;
+  }
+  .term-condition-text{
+    font-size: 5px;
+  }
 }
 
 @media screen and (max-width: 760px) {
@@ -114,6 +120,9 @@ li .nav-NavLink {
     position: relative;
       
   } */
+  .request-callback-container{
+    scale: 50%;
+  }
   img {
     position: relative;
     display: flex;

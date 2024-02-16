@@ -9,7 +9,7 @@ export default function Navigation(Props) {
         <nav className={`navbar navbar-expand-lg navbar-light bg-${Props.btncolor}`}>
           <NavLink className="navbar-brand fs-2 d-flex row" to="/">
             <img className="mainlogo"src={logo2} height={40} width={40} alt="" />
-            <b className="pt-1 mx-2 logotext">StarLink IT Solutions</b>
+            <b className="p-1 mx-2 logotext"> StarLink</b>
           </NavLink>
           <button
             className="navbar-toggler"

@@ -1,13 +1,19 @@
 import React from "react";
 // import logo from "../img/logo2.jpg";
-import card1 from "../img/card1.png";
-import card2 from "../img/card2.png";
-import card3 from "../img/card3.png";
-import card4 from "../img/card4.png";
-import card5 from "../img/card5.png";
-import card6 from "../img/card6.png";
+// import card1 from "../img/card1.png";
+import usercard1 from "../img/usercard1.png";
+import usercard2 from "../img/usercard2.png";
+import usercard3 from "../img/usercard3.png";
+import usercard4 from "../img/usercard4.png";
+import usercard5 from "../img/usercard5.png";
+import usercard6 from "../img/usercard6.png";
+import usercard7 from "../img/usercard7.png";
+import usercard8 from "../img/usercard8.png";
+import usercard9 from "../img/usercard9.png";
+import usercard10 from "../img/usercard10.png";
+import usercard11 from "../img/usercard11.png";
+import usercard12 from "../img/usercard12.png";
 import card7 from "../img/card7.png";
-import card8 from "../img/card8.png";
 import card9 from "../img/card9.png";
 import card10 from "../img/card10.png";
 import card11 from "../img/card11.png";
@@ -43,8 +49,8 @@ import { CiCircleRemove } from "react-icons/ci";
 
 export default function Home() {
 
-
     const [isvisible, setIsvisible] = useState(true);
+
   // useEffect(() => {
   //   toggle();
   // }, []);
@@ -55,10 +61,14 @@ export default function Home() {
   // }, 5000);
   // setTimeout(() => {
   // }, 5000);
+  
     let toggle = () => { //this onclik on form remove button
-      setIsvisible(!isvisible);
-
+        
+        setIsvisible(!isvisible);
+    // setTimeout(function (){
+    // }, 2000);
     };
+
     const [state, handleSubmit] = useForm("mpzvdprv");
 
     const handleFormSubmit = (event) => {
@@ -81,8 +91,8 @@ export default function Home() {
     return (
         <React.Fragment>
             {/*###################################################################################### */}
-        <div className="box d-flex justify-content-center">
-          {isvisible && <div className="request-callback-container my-3 justify-content-center" id="request-callback-toggle" style={{ background: "#fff", width: "30%", border: "1px solid #abababd9", boxShadow: "0 0 40px 5px #abababd9", position: "absolute", zIndex: "2" }}>
+            {isvisible &&  <div className="box d-flex justify-content-center" style={{backgroundColor:"orange",position:"relative"}}>
+          <div className="request-callback-container my-3 justify-content-center" id="request-callback-toggle" style={{ background: "#fff",backgroundPosition:"center", width: "35%", border: "1px solid #abababd9", boxShadow: "0 0 40px 5px #abababd9", position: "absolute", zIndex: "2" }}>
             <div className="header-text p-3 d-flex" style={{ background: "#289bde", color: "#fff", justifyContent: "space-between" }}>
               <span>
                 <h2>Request Callback</h2>
@@ -130,7 +140,7 @@ export default function Home() {
                 field="Course"
                 errors={state.errors}
               />
-              <label htmlFor="course" className="text text-start " style={{ position: "relative", left: "0px", fontWeight: "500" }}>Message</label>
+              <label htmlFor="message" className="text text-start " style={{ position: "relative", left: "0px", fontWeight: "500" }}>Message</label>
               <textarea
                 id="message"
                 name="message"
@@ -149,11 +159,11 @@ export default function Home() {
               <button type="submit" disabled={state.submitting} className="m-3" style={{ width: "80%", height: "40px", border: "none", background: "#289bde", color: "#fff" }}>
                 Submit
               </button>
-              <p className="text-muted" style={{ width: "80%" }}>By continuing, you confirm that you have read and agreed to Ed-Tech&apos;s <span style={{ color: "#289bde" }}>Terms</span> and <span style={{ color: "#289bde" }}>Privacy policy</span></p>
+              <p className="text-muted term-condition-text" style={{ width: "80%" }}>By continuing, you confirm that you have read and agreed to Ed-Tech&apos;s <span style={{ color: "#289bde" }}>Terms</span> and <span style={{ color: "#289bde" }}>Privacy policy</span></p>
             </form>
           </div>
-          }
         </div>
+          }
         {/* ###################################################################################### */}
                 <Carousel />
 
@@ -172,7 +182,7 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card1}
+                                    src={usercard1}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -204,9 +214,12 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card2}
+                                    src={usercard2}
+                                    height={200}
+                                    width={200}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
+                                    style={{borderRadius:"3px"}}
                                 />
                             </div>
                             <div className="col-md-8">
@@ -236,7 +249,7 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card3}
+                                    src={usercard3}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -268,7 +281,10 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card6}
+                                    src={usercard4}
+                                    height={200}
+                                    width={200}
+                                    style={{borderRadius:"3px"}}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -300,7 +316,10 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card5}
+                                    src={usercard5}
+                                    height={200}
+                                    width={200}
+                                    style={{borderRadius:"3px"}}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -332,7 +351,10 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card4}
+                                    src={usercard6}
+                                    height={200}
+                                    width={200}
+                                    style={{borderRadius:"3px"}}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -362,7 +384,10 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card4}
+                                    src={usercard7}
+                                    height={200}
+                                    width={200}
+                                    style={{borderRadius:"3px"}}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -391,7 +416,10 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card6}
+                                    src={usercard8}
+                                    height={200}
+                                    width={200}
+                                    style={{borderRadius:"3px"}}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -420,7 +448,10 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card4}
+                                    src={usercard9}
+                                    height={200}
+                                    width={200}
+                                    style={{borderRadius:"3px"}}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -449,7 +480,10 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card4}
+                                    src={usercard10}
+                                    height={200}
+                                    width={200}
+                                    style={{borderRadius:"3px"}}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -478,7 +512,10 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card4}
+                                    src={usercard11}
+                                    height={200}
+                                    width={200}
+                                    style={{borderRadius:"3px"}}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -507,7 +544,10 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card4}
+                                    src={usercard12}
+                                    height={200}
+                                    width={200}
+                                    style={{borderRadius:"3px"}}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -624,7 +664,7 @@ export default function Home() {
 
                 <div className="row justify-content-center">
                     <div className="card m-1 mb-3" style={{ maxWidth: "17rem" }}>
-                        <img src={card8} className="card-img-top" alt="..." />
+                        <img src={usercard1} className="card-img-top" alt="..." />
                         <div className="card-body">
                             <h5 className="card-title">Alina </h5>
                             <p className="text-muted">UX Designer</p>
