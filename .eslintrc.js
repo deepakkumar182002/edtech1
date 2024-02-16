@@ -32,7 +32,7 @@ module.exports = {
     // Customize your rules here
     // Example: 'no-console': 'off',
     semi: ["error", "always"],
-    quotes: ["error", "double",],
+    quotes: ["error", "double"],
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
   },

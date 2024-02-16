@@ -26,7 +26,7 @@ import compony3 from "../img/compony3.png";
 import compony4 from "../img/compony4.png";
 import compony5 from "../img/compony5.png";
 import compony6 from "../img/compony6.png";
-
+import { useState } from "react";
 import "../App.css";
 import { NavLink, Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -35,14 +35,127 @@ import {
     FaLinkedin,
     FaInstagram,
     FaSquareXTwitter,
-    FaSquareFacebook,FaCalendar
+    FaSquareFacebook, FaCalendar
 } from "react-icons/fa6";
 import Carousel from "./Carousel";
+import { useForm, ValidationError } from "@formspree/react";
+import { CiCircleRemove } from "react-icons/ci";
 
 export default function Home() {
+
+
+    const [isvisible, setIsvisible] = useState(true);
+  // useEffect(() => {
+  //   toggle();
+  // }, []);
+
+  // setInterval(() => {
+  //   toggle();
+    
+  // }, 5000);
+  // setTimeout(() => {
+  // }, 5000);
+    let toggle = () => { //this onclik on form remove button
+      setIsvisible(!isvisible);
+
+    };
+    const [state, handleSubmit] = useForm("mpzvdprv");
+
+    const handleFormSubmit = (event) => {
+      // Your custom form validation logic goes here
+      // For example, check if name, email, and message are not empty
+      if (!event.target.name.value || !event.target.email.value || !event.target.message.value) {
+        // Show an error message or handle the validation error
+        console.error("Please fill out all required fields");
+        return;
+      }
+  
+      // If validation passes, proceed with the form submission
+      handleSubmit(event);
+    };
+  
+    if (state.succeeded) {
+      return <p>Thanks for joining!</p>;
+    }
+
     return (
         <React.Fragment>
-            <Carousel />
+            {/*###################################################################################### */}
+        <div className="box d-flex justify-content-center">
+          {isvisible && <div className="request-callback-container my-3 justify-content-center" id="request-callback-toggle" style={{ background: "#fff", width: "30%", border: "1px solid #abababd9", boxShadow: "0 0 40px 5px #abababd9", position: "absolute", zIndex: "2" }}>
+            <div className="header-text p-3 d-flex" style={{ background: "#289bde", color: "#fff", justifyContent: "space-between" }}>
+              <span>
+                <h2>Request Callback</h2>
+                <h6>Fill out this form below!</h6>
+              </span>
+              <CiCircleRemove id="remove-btn" onClick={toggle} style={{ fontSize: "30px" }} />
+            </div>
+            <form onSubmit={handleFormSubmit} className="d-flex align-items-center " style={{ display: "flex", flexDirection: "column", width: "100%" }}>
+              <input id="Username" type="Username" name="name" placeholder="Enter You Name" className="m-2 p-2"
+                style={{ width: "80%", height: "40px" }}
+              />
+              <ValidationError
+                prefix="Username"
+                field="name"
+                errors={state.errors}
+              />
+              <input id="email" type="email" name="email" placeholder="Enter Your Email"
+                style={{ width: "80%", height: "40px" }}
+                className="m-2 p-2"
+              />
+              <ValidationError
+                prefix="Email"
+                field="email"
+                errors={state.errors}
+              />
+              <input id="Phone" name="Phone" placeholder="Enter Your Phone no."
+                style={{ width: "80%", height: "40px" }}
+                className="m-2 p-2"
+              />
+              <ValidationError
+                prefix="Phone"
+                field="Phone"
+                errors={state.errors}
+              />
+              <label htmlFor="course" className="text text-start" style={{ position: "relative", left: "0px", fontWeight: "500" }}>Course Interest*</label>
+              <select name="course" id="course" className="p-2" style={{ width: "80%" }}>
+                <option >Select Course</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Cloud computing">Cloud computing</option>
+                <option value="Cyber Security">Cyber Security</option>
+              </select>
+              <ValidationError
+                prefix="Course"
+                field="Course"
+                errors={state.errors}
+              />
+              <label htmlFor="course" className="text text-start " style={{ position: "relative", left: "0px", fontWeight: "500" }}>Message</label>
+              <textarea
+                id="message"
+                name="message"
+                className="my-0 p-2"
+                rows="3"
+                cols="50"
+                placeholder="text.."
+                style={{ width: "80%" }}
+              />
+              <ValidationError
+                prefix="Message"
+                field="message"
+                errors={state.errors}
+
+              />
+              <button type="submit" disabled={state.submitting} className="m-3" style={{ width: "80%", height: "40px", border: "none", background: "#289bde", color: "#fff" }}>
+                Submit
+              </button>
+              <p className="text-muted" style={{ width: "80%" }}>By continuing, you confirm that you have read and agreed to Ed-Tech&apos;s <span style={{ color: "#289bde" }}>Terms</span> and <span style={{ color: "#289bde" }}>Privacy policy</span></p>
+            </form>
+          </div>
+          }
+        </div>
+        {/* ###################################################################################### */}
+                <Carousel />
 
             <div className="container-fluid">
                 <div className="deadings my-5 text-center ">
@@ -75,7 +188,7 @@ export default function Home() {
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/softwaredev'>Explore now</Link>
 
@@ -107,7 +220,7 @@ export default function Home() {
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/softwaredev'>Explore now</Link>
 
@@ -123,7 +236,7 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card6}
+                                    src={card3}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -139,7 +252,7 @@ export default function Home() {
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/Digitalmarketing'>Explore now</Link>
 
@@ -155,7 +268,7 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card3}
+                                    src={card6}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -171,7 +284,7 @@ export default function Home() {
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/Cybersecurity'>Explore now</Link>
 
@@ -203,7 +316,7 @@ export default function Home() {
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/Datascience'>Explore now</Link>
 
@@ -235,7 +348,7 @@ export default function Home() {
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/UIUX'>Explore now</Link>
 
@@ -258,14 +371,14 @@ export default function Home() {
                                 <div className="card-body">
                                     <h5 className="card-title">IOT / Embedded </h5>
                                     <p className="card-text text-justify">
-                                    Revolutionize learning with our IoT and embedded systems online courses. Streamlined card design ensures accessible, dynamic content delivery for a futuristic educational experience.    
+                                        Revolutionize learning with our IoT and embedded systems online courses. Streamlined card design ensures accessible, dynamic content delivery for a futuristic educational experience.
                                     </p>
                                     <li className="text-muted" style={{ fontSize: "0.8rem" }}>302.2k Learners</li>
                                     <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;&#9733;&#9733;</span> 4.1(4133 Rating)</li>
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/'>Explore now</Link>
 
@@ -278,7 +391,7 @@ export default function Home() {
                         <div className="row g-0">
                             <div className="col-md-4 align-self-center">
                                 <img
-                                    src={card4}
+                                    src={card6}
                                     className="img-fluid rounded-start m-3"
                                     alt="..."
                                 />
@@ -287,14 +400,14 @@ export default function Home() {
                                 <div className="card-body">
                                     <h5 className="card-title">Graphics Design</h5>
                                     <p className="card-text text-justify">
-                                    Revolutionize online learning graphics with our card-based design—melding sleek aesthetics, user-friendly navigation, and captivating visuals for an immersive educational experience.
+                                        Revolutionize online learning graphics with our card-based design—melding sleek aesthetics, user-friendly navigation, and captivating visuals for an immersive educational experience.
                                     </p>
                                     <li className="text-muted" style={{ fontSize: "0.8rem" }}>102.2k Learners</li>
                                     <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;</span>&#9733;&#9733; 2.1(2133 Rating)</li>
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/'>Explore now</Link>
 
@@ -316,14 +429,14 @@ export default function Home() {
                                 <div className="card-body">
                                     <h5 className="card-title">Drone Technology</h5>
                                     <p className="card-text text-justify">
-                                    Revolutionizing education through drone technology, our online courses feature dynamic content delivery, offering an unparalleled immersive learning experience.
+                                        Revolutionizing education through drone technology, our online courses feature dynamic content delivery, offering an unparalleled immersive learning experience.
                                     </p>
                                     <li className="text-muted" style={{ fontSize: "0.8rem" }}>102.2k Learners</li>
                                     <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;&#9733;&#9733;</span>4.1(4153 Rating)</li>
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/'>Explore now</Link>
 
@@ -345,14 +458,14 @@ export default function Home() {
                                 <div className="card-body">
                                     <h5 className="card-title">AI & Machine Learning</h5>
                                     <p className="card-text text-justify">
-                                    Revolutionize learning with our AI-powered card-based design for online courses. Experience personalized content, adaptive quizzes, and cutting-edge insights effortlessly.
+                                        Revolutionize learning with our AI-powered card-based design for online courses. Experience personalized content, adaptive quizzes, and cutting-edge insights effortlessly.
                                     </p>
                                     <li className="text-muted" style={{ fontSize: "0.8rem" }}>302.2k Learners</li>
                                     <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;&#9733;</span>&#9733; 3.1(3143 Rating)</li>
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/'>Explore now</Link>
 
@@ -374,14 +487,14 @@ export default function Home() {
                                 <div className="card-body">
                                     <h5 className="card-title">Operating System</h5>
                                     <p className="card-text text-justify">
-                                    Revolutionizing online learning, our OS employs card-based design, enhancing user interaction and accessibility for an optimized, intuitive educational experience.
+                                        Revolutionizing online learning, our OS employs card-based design, enhancing user interaction and accessibility for an optimized, intuitive educational experience.
                                     </p>
                                     <li className="text-muted" style={{ fontSize: "0.8rem" }}>302.2k Learners</li>
                                     <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;&#9733;</span>&#9733; 3.1(3361 Rating)</li>
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/'>Explore now</Link>
 
@@ -403,14 +516,14 @@ export default function Home() {
                                 <div className="card-body">
                                     <h5 className="card-title">DevOps</h5>
                                     <p className="card-text text-justify">
-                                    Revolutionize online courses with DevOps, leveraging card-based design for streamlined development, seamless integration, and optimal collaboration. Empower efficiency effortlessly.
+                                        Revolutionize online courses with DevOps, leveraging card-based design for streamlined development, seamless integration, and optimal collaboration. Empower efficiency effortlessly.
                                     </p>
                                     <li className="text-muted" style={{ fontSize: "0.8rem" }}>302.2k Learners</li>
                                     <li style={{ fontSize: "0.8rem" }}><span style={{ color: "orange" }}>&#9733;&#9733;</span>&#9733;&#9733; 3.1(21 61 Rating)</li>
 
                                     <li className="card-text d-flex" style={{ justifyContent: "space-between" }}>
                                         <small className="text-muted d-flex justify-content-start">
-                                        <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
+                                            <FaCalendar className="m-2" /> <span className="pt-1">3 Months</span>
                                         </small>
                                         <Link to='/'>Explore now</Link>
 
@@ -480,7 +593,7 @@ export default function Home() {
                         <div className="row fw-bold m-4">
                             <h1>Ready to join?</h1>
                             <span className="text">
-                            Embark on a transformative learning experience! Join our edtech platform today and unlock a world of knowledge. Explore innovative courses, connect with experts, and take your skills to new heights!
+                                Embark on a transformative learning experience! Join our edtech platform today and unlock a world of knowledge. Explore innovative courses, connect with experts, and take your skills to new heights!
                             </span>
                         </div>
                     </div>
@@ -505,7 +618,7 @@ export default function Home() {
                 <div className="meet-students my-5">
                     <h1 className="heading-text text-center">Meet Our Successfull Students</h1>
                     <p className="container text-muted text-center">
-                    Meet the trailblazers who&apos;ve unlocked their potential with our courses. Our successful students have embraced learning, conquered challenges, and achieved remarkable milestones. Join our community of achievers and embark on your own journey toward success today.
+                        Meet the trailblazers who&apos;ve unlocked their potential with our courses. Our successful students have embraced learning, conquered challenges, and achieved remarkable milestones. Join our community of achievers and embark on your own journey toward success today.
                     </p>
                 </div>
 
@@ -556,7 +669,7 @@ export default function Home() {
                     <h1 className="heading-text">Some Student Feedback</h1>
 
                     <p className="text-muted">
-                    Our students rave about their experience! Engaging content, interactive lessons, and knowledgeable instructors make learning a joy. The personalized approach and real-world applications ensure a deeper understanding. Join us for an unparalleled educational journey!
+                        Our students rave about their experience! Engaging content, interactive lessons, and knowledgeable instructors make learning a joy. The personalized approach and real-world applications ensure a deeper understanding. Join us for an unparalleled educational journey!
                     </p>
                 </div>
 
@@ -839,61 +952,61 @@ export default function Home() {
                 <div className="deadings my-5 text-center ">
                     <h1 className="heading-text">Trusted by over 800+ componies</h1>
                     <div className="row componies-icons  mt-5 d-flex justify-content-center">
-                        <img src={compony}  style={{height:"180px",width:"250px"}} className="pt-3" alt="" />
-                        <img src={compony2} style={{height:"180px",width:"250px"}} className="pt-3" alt="" />
-                        <img src={compony3} style={{height:"180px",width:"250px"}} className="pt-3" alt="" />
-                        <img src={compony4} style={{height:"180px",width:"250px"}} className="pt-3" alt="" />
-                        <img src={compony5} style={{height:"180px",width:"250px"}} className="pt-3" alt="" />
-                        <img src={compony6} style={{height:"180px",width:"250px"}} className="pt-3" alt="" />
+                        <img src={compony} style={{ height: "180px", width: "250px" }} className="pt-3" alt="" />
+                        <img src={compony2} style={{ height: "180px", width: "250px" }} className="pt-3" alt="" />
+                        <img src={compony3} style={{ height: "180px", width: "250px" }} className="pt-3" alt="" />
+                        <img src={compony4} style={{ height: "180px", width: "250px" }} className="pt-3" alt="" />
+                        <img src={compony5} style={{ height: "180px", width: "250px" }} className="pt-3" alt="" />
+                        <img src={compony6} style={{ height: "180px", width: "250px" }} className="pt-3" alt="" />
                     </div>
                 </div>
             </div>
-                {/* <footer style={{ background: "#272727", color: "#FFF" }}> */}
-                <footer style={{ background: "#289bde", color: "#FFF" }}>
+            {/* <footer style={{ background: "#272727", color: "#FFF" }}> */}
+            <footer style={{ background: "#289bde", color: "#FFF" }}>
 
-                    <div className="row d-flex m-2">
+                <div className="row d-flex m-2">
 
-                        <div className="footer-title-name-box" style={{ background: "", padding: "20px", position: "relative", width: "auto" }}>
-                            <h1 className="text ">Ed Tech</h1>
-                            <p className="footer-text">Ed Tech Pvt ltd, Noida, Delhi, India Lorem ipsum dolor sit</p>
-                            <p className="footer-text">India, Uttar Pradesh Agra (282007) </p>
-                            <p className="footer-text">Privacy Policy | Tearm of use |</p>
-                        </div>
-
-                        <div className="Footer-All-Links d-flex flex-row p-3 mx-3" style={{ position: "relative" }}>
-                            <li className="p-2 bd-highlight" style={{ display: "grid", placeItems: "center" }}>
-                                <Link to='/' style={{ color: "#fff" }}>Home</Link>
-                                <Link to='/About' style={{ color: "#fff" }}>About</Link>
-                                <Link to='/Success' style={{ color: "#fff" }}>Success</Link>
-                                <Link to='/Contact' style={{ color: "#fff" }}>Contact</Link>
-                            </li>
-                            <li className="p-2 bd-highlight mx-3" style={{ display: "grid", placeItems: "center" }}>
-                                <Link to='/explorecourses' style={{ color: "#fff" }}>All Courses</Link>
-                                <Link to='/Service' style={{ color: "#fff" }}>Services</Link>
-                                <Link to='/Address' style={{ color: "#fff" }}>Address</Link>
-                                <Link to='/Help' style={{ color: "#fff" }}>Help</Link>
-                            </li>
-                        </div>
+                    <div className="footer-title-name-box" style={{ background: "", padding: "20px", position: "relative", width: "auto" }}>
+                        <h1 className="text ">Ed Tech</h1>
+                        <p className="footer-text">Ed Tech Pvt ltd, Noida, Delhi, India Lorem ipsum dolor sit</p>
+                        <p className="footer-text">India, Uttar Pradesh Agra (282007) </p>
+                        <p className="footer-text">Privacy Policy | Tearm of use |</p>
                     </div>
-                    <div className="social-midea" style={{ position: "relative" }}>
-                        <li className="col" style={{ position: "relative", top: "-20px" }}>
-                            <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com'>
-                                <FaLinkedin style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
-                            </a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com">
-                                <FaInstagram style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
-                            </a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com">
-                                <FaSquareXTwitter style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
-                            </a>
-                            <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
-                                <FaSquareFacebook style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
-                            </a>
+
+                    <div className="Footer-All-Links d-flex flex-row p-3 mx-3" style={{ position: "relative" }}>
+                        <li className="p-2 bd-highlight" style={{ display: "grid", placeItems: "center" }}>
+                            <Link to='/' style={{ color: "#fff" }}>Home</Link>
+                            <Link to='/About' style={{ color: "#fff" }}>About</Link>
+                            <Link to='/Success' style={{ color: "#fff" }}>Success</Link>
+                            <Link to='/Contact' style={{ color: "#fff" }}>Contact</Link>
                         </li>
-                        {/* <img src={logo} height={50} width={50} className="p-2" alt="logo" /> */}
-
+                        <li className="p-2 bd-highlight mx-3" style={{ display: "grid", placeItems: "center" }}>
+                            <Link to='/explorecourses' style={{ color: "#fff" }}>All Courses</Link>
+                            <Link to='/Service' style={{ color: "#fff" }}>Services</Link>
+                            <Link to='/Address' style={{ color: "#fff" }}>Address</Link>
+                            <Link to='/Help' style={{ color: "#fff" }}>Help</Link>
+                        </li>
                     </div>
-                </footer>
+                </div>
+                <div className="social-midea" style={{ position: "relative" }}>
+                    <li className="col" style={{ position: "relative", top: "-20px" }}>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com'>
+                            <FaLinkedin style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com">
+                            <FaInstagram style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.twitter.com">
+                            <FaSquareXTwitter style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                        </a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.facebook.com/">
+                            <FaSquareFacebook style={{ margin: "5px", fontSize: "1.5rem", color: "#fff" }} />
+                        </a>
+                    </li>
+                    {/* <img src={logo} height={50} width={50} className="p-2" alt="logo" /> */}
+
+                </div>
+            </footer>
         </React.Fragment>
     );
 }

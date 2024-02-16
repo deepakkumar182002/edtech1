@@ -40,20 +40,20 @@ export default function Navigation(Props) {
                     <li className="box col">
                       <Link className="dropdown-item" to="/softwaredev">Software Development</Link>
                       <Link className="dropdown-item" to="/Cloudcomputing">Cloud Computing</Link>
-                      <Link className="dropdown-item" to="/Digitalmarketing">digital marketing</Link>
-                      <Link className="dropdown-item" to="/">Cyber Security</Link>
-                      <Link className="dropdown-item" to="/">Data Science</Link>
-                      <Link className="dropdown-item" to="/">UI & UX</Link>
+                      <Link className="dropdown-item" to="/Digitalmarketing">Digital marketing</Link>
+                      <Link className="dropdown-item" to="/Cybersecurity">Cyber Security</Link>
+                      <Link className="dropdown-item" to="/Datascience">Data Science</Link>
+                      <Link className="dropdown-item" to="/UIUX">UI & UX Design</Link>
                       <Link className="dropdown-item" to="/">IOT / Embedded</Link>
                       <Link className="dropdown-item" to="/">Graphics Design</Link>
                       <Link className="dropdown-item" to="/">Drone Technology</Link>
-                      <Link type="button" className="btn m-4" to="/explorecourses">More Courses</Link>
+                      {/* <Link type="button" className="btn m-4" to="/explorecourses">More Courses</Link> */}
                     </li>
                     <li className="box col">
                       <div className="box">
                         
                       <Link className="dropdown-item" to="/">AI & Machine Learning</Link>
-                      <Link className="dropdown-item" to="/">OS Linux</Link>
+                      <Link className="dropdown-item" to="/">Operating System</Link>
                       <Link className="dropdown-item" to="/">DevOps</Link>
 
                       </div>
@@ -78,12 +78,12 @@ export default function Navigation(Props) {
                 </NavLink>
               </li>
               <li className="nav-item mx-3">
-                <NavLink className="nav-NavLink" to="/">
+                <NavLink className="nav-NavLink" to="/test">
                   Success
                 </NavLink>
               </li>
               <li className="nav-item mx-3">
-                <NavLink className="nav-NavLink" to="/">
+                <NavLink className="nav-NavLink" to="/contact">
                   Contact
                 </NavLink>
               </li>

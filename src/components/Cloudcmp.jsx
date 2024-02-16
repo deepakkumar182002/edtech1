@@ -1,6 +1,5 @@
 import React from "react";
 // import { useParams } from "react-router-dom";
-import logo from "../img/compony4.png";
 import compony from "../img/compony.png";
 import compony2 from "../img/compony2.png";
 import compony3 from "../img/compony3.png";
@@ -44,14 +43,12 @@ export default function Cloudcmp() {
                 <NavLink to="/Cloudcomputing" className="text-muted">Cloudcmp</NavLink>
                 <div className="row d-flex">
                     <div className="col">
-                        <img src={logo} alt="" className="logo h-20 w-10 my-3" />
+                        {/* <img src={logo} alt="" className="logo h-20 w-10 my-3" /> */}
                         <h1>Certification in Cloud Computing</h1>
                         <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
                         <p>Explore the dynamic world of Cloud Computing with our comprehensive course. Master key concepts such as virtualization, scalability, and security. Gain hands-on experience with leading cloud platforms, preparing you for a successful career in this rapidly evolving field. Join us and harness the power of cloud technology for innovation and efficiency.</p>
                         <div className="d-flex align-items-center">
                             <h5 className="text-muted ">Certificate Assign with </h5>
-                            {/* <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" />
-                        <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" /> */}
                         </div>
                         <div className="d-flex align-items-center my-4">
                             <button type="button" id="ApllyNowBtn" className="btn ">Apply Now</button>
@@ -65,7 +62,7 @@ export default function Cloudcmp() {
                 </div>
                 <br />
                 <hr />
-                <div className="d-flex justify-content-center  my-5">
+                <div className="d-flex justify-content-center text-center">
                     <div className="col">
                         <h6 className="text-muted">Next Prgram</h6>
                         <h4>7 Feb</h4>
@@ -118,13 +115,13 @@ export default function Cloudcmp() {
                     </div>
                     <div className="col">
                         <h2 className="text-center my-5">Top Componies Hiring</h2>
-                        <div className="row d-flex" style={{ background: "#e5f7f9d9", borderRadius: "10px" }}>
-                            <img className="col m-4" src={compony} style={{ height: "50px", width: "100px" }} alt="" />
-                            <img className="col m-4" src={compony2} style={{ height: "50px", width: "100px" }} alt="" />
-                            <img className="col m-4" src={compony3} style={{ height: "50px", width: "100px" }} alt="" />
-                            <img className="col m-4" src={compony4} style={{ height: "50px", width: "100px" }} alt="" />
-                            <img className="col m-4" src={compony5} style={{ height: "50px", width: "100px" }} alt="" />
-                            <img className="col m-4" src={compony6} style={{ height: "50px", width: "100px" }} alt="" />
+                        <div className="row d-flex align-items-center justify-content-center" style={{ background: "#e5f7f9d9", borderRadius: "10px" }}>
+                        <img src={compony}  style={{height:"100px",width:"150px"}} className="pt-3 m-3" alt="" />
+                        <img src={compony2} style={{height:"100px",width:"150px"}} className="pt-3 m-3" alt="" />
+                        <img src={compony3} style={{height:"100px",width:"150px"}} className="pt-3 m-3" alt="" />
+                        <img src={compony4} style={{height:"100px",width:"150px"}} className="pt-3 m-3" alt="" />
+                        <img src={compony5} style={{height:"100px",width:"150px"}} className="pt-3 m-3" alt="" />
+                        <img src={compony6} style={{height:"100px",width:"150px"}} className="pt-3 m-3" alt="" />
                         </div>
                     </div>
                 </div>
@@ -132,9 +129,7 @@ export default function Cloudcmp() {
                 <div className="meet-students my-5">
                     <h1 className="heading-text text-center">Meet Our Successfull Students</h1>
                     <p className="container text-muted text-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore
-                        consequatur eveniet repellat provident facilis cupiditate
-                        perspiciatis accusamus. Repellendus, nesciunt quae.
+                    Meet the trailblazers who&apos;ve unlocked their potential with our courses. Our successful students have embraced learning, conquered challenges, and achieved remarkable milestones. Join our community of achievers and embark on your own journey toward success today.
                     </p>
                 </div>
 
@@ -185,13 +180,11 @@ export default function Cloudcmp() {
                     <h1 className="heading-text">Some Student Feedback</h1>
 
                     <p className="text-muted">
-                        it is Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                        Officia fugit dolorem velit impedit laudantium delectus aperiam
-                        eveniet culpa atque ea. a long established fact that a reader will
-                        be distracted by the readable content of a page when looking at its
-                        layout.
+                    Our students rave about their experience! Engaging content, interactive lessons, and knowledgeable instructors make learning a joy. The personalized approach and real-world applications ensure a deeper understanding. Join us for an unparalleled educational journey!
                     </p>
                 </div>
+                {/* students feedback */}
+                
 
                 <div className="row m-auto" id="horizontall">
                     <div className="revers-forword">

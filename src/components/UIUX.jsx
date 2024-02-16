@@ -33,22 +33,22 @@ import {
     FaSquareFacebook,
 } from "react-icons/fa6";
 // import { CiGlobe } from "react-icons/ci";
-export default function Digitalmarketing() {
+export default function UIUX() {
     // const CloudParam = useParams();
 
     return (
         <>
             <div className="container">
                 <NavLink to="/" className="text-muted">Home&gt;</NavLink>
-                <NavLink to="/Digitalmarketing" className="text-muted">Digital Marketing</NavLink>
+                <NavLink to="/UIUX" className="text-muted">UI /UX Design</NavLink>
                 <div className="row d-flex">
                     <div className="col">
                         {/* <img src={logo} alt="" className="logo h-20 w-10 my-3" /> */}
-                        <h1>Certification in Digital Marketing</h1>
+                        <h1>Certification in UI/UX Deisgn</h1>
                         <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
-                        <p>Unlock boundless knowledge with our cutting-edge online courses! Elevate your skills and career prospects through interactive lessons, expert-led webinars, and engaging content. Our digital platform offers a seamless learning experience, tailored to your pace and preferences. Dive into diverse subjects, from business to technology, and gain a competitive edge. Join a vibrant community of learners and embark on a transformative educational journey. Start your success story today with our online courses  where knowledge meets convenience, and excellence is just a click away!</p>
+                        <p>Transforming the online learning experience, our UI/UX design for online courses embraces a card-based layout, seamlessly blending aesthetic appeal with intuitive navigation. Each card serves as a visual gateway to engaging course content, ensuring a user-friendly journey. Striking a balance between simplicity and information richness, our design optimizes accessibility and encourages an immersive learning environment. Elevate your educational journey with a thoughtfully crafted interface that prioritizes user experience and fosters a seamless connection between learners and content.</p>
                         <div className="d-flex align-items-center">
-                            <h5 className="text-muted ">Certificate Assign with </h5>
+                            <h5 className="text-muted ">Certificate Assign with</h5>
                             {/* <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" />
                         <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" /> */}
                         </div>
@@ -86,8 +86,8 @@ export default function Digitalmarketing() {
                             <GrCertificate style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                             <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
                                 <div className="card-body">
-                                    <h5 className="card-title">Promising Career in Digital Marketing</h5>
-                                    <p className="card-text">Develop a lucrative career in the cloud domain, which boasts some of the highest-paying IT job roles</p>
+                                    <h5 className="card-title">Promising Career in UI/UX Design</h5>
+                                    <p className="card-text">Develop a lucrative career in the UI/UX Design domain, which boasts some of the highest-paying IT job roles</p>
 
                                 </div>
                             </div>
@@ -96,7 +96,7 @@ export default function Digitalmarketing() {
                         <div className="box" style={{ height: "200px" }}>
                             <MdOutlineTouchApp style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                             <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
-                                <div className="card-body" style={{ height: "170px" }}>
+                                <div className="card-body" style={{ height: "196px" }}>
                                     <h5 className="card-title">Caltech Campus Visit Event</h5>
 
                                     <p className="card-text">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
@@ -107,7 +107,7 @@ export default function Digitalmarketing() {
                         <div className="box" style={{ height: "200px" }}>
                             <GrGlobe style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                             <div className="card ml-2" style={{ width: "20rem", borderBottom: "5px solid#289bde" }}>
-                                <div className="card-body" style={{ height: "170px" }}>
+                                <div className="card-body" style={{ height: "196px" }}>
                                     <h5 className="card-title">Caltech&apos;s Academic Excellence</h5>
                                     <p className="card-text">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
 
@@ -115,7 +115,7 @@ export default function Digitalmarketing() {
                             </div>
                         </div>
                     </div>
-                    <div className="col">
+                    <div className="col my-5">
                         <h2 className="text-center my-5">Top Componies Hiring</h2>
                         <div className="row d-flex align-items-center justify-content-center" style={{ background: "#e5f7f9d9", borderRadius: "10px" }}>
                         <img src={compony}  style={{height:"100px",width:"150px"}} className="pt-3 m-3" alt="" />

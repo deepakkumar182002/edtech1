@@ -215,3 +215,10 @@ li{
   color: #289bde;
   background: #e5f7f9d9;
 }
+
+/* remove-btn */
+#remove-btn:active{
+  color:#289bde ;
+  background: #fff;
+  border-radius: 50%;
+}

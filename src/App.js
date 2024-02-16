@@ -1,30 +1,38 @@
 import React from "react";
 import ExploreCourses from "./components/ExploreCourses";
 import Navigation from "./components/Navigation";
-import Home from "./components/Home";
+import Home from "./components/Home2";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Cloudcmp from "./components/Cloudcmp";
 import Softwaredev from "./components/Softwaredev";
 import "../src/App.css";
 import Digitalmarketing from "./components/Digitalmarketing";
+import Cybersecurity from "./components/Cybersecurity";
+import Datascience from "./components/Datascience";
+import UIUX from "./components/UIUX";
+import Contactform from "./components/Contactform";
 
 function App() {
-  
   console.log(process.env.REACT_APP_MY_API);
   return (
     <div>
       <BrowserRouter>
-        <Navigation />;
+        <Navigation />
         {/* <Contents /> */}
         {/* <ExploreCourses /> */}
         <Routes>
           ;
           {/* <Route path="/*" element={<Page404 />} /> */}
           <Route path="/" element={<Home />} />;
-          <Route path="/explorecourses"element={<ExploreCourses />} />
+          <Route path="/contact" element={<Contactform />} />
+
+          <Route path="/explorecourses" element={<ExploreCourses />} />
           <Route path="/Softwaredev" element={<Softwaredev />} />;
           <Route path="/Cloudcomputing" element={<Cloudcmp />} />;
           <Route path="/Digitalmarketing" element={<Digitalmarketing />} />;
+          <Route path="/Cybersecurity" element={<Cybersecurity />} />;
+          <Route path="/Datascience" element={<Datascience />} />;
+          <Route path="/UIUX" element={<UIUX />} />;
           {/* <Route path="/explorecourses" element={<Courses />} /> */}
           {/* <Route path="/courses/:name" element={<Courses />} />
           <Route path="/courses/:name2" element={<Courses />} /> */}

@@ -20,7 +20,7 @@ export default function Carousel() {
           <div className="carousel-inner">
             <div className="carousel-item active" style={{ background: "black" }}>
               <div className="carousel-caption d-none d-md-block">
-                <h1>India&apos;s Best Learning Plateform</h1>
+                <h1>India&apos;s Best Learning Platform</h1>
                 <p>...</p>
               </div>
               <img className="d-block w-100 " style={{ opacity: "50%", height: "600px" }} src={poster1} alt="First slide" />
