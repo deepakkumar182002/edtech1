@@ -46,7 +46,7 @@ export default function UIUX() {
                         {/* <img src={logo} alt="" className="logo h-20 w-10 my-3" /> */}
                         <h1>Certification in UI/UX Deisgn</h1>
                         <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
-                        <p>Transforming the online learning experience, our UI/UX design for online courses embraces a card-based layout, seamlessly blending aesthetic appeal with intuitive navigation. Each card serves as a visual gateway to engaging course content, ensuring a user-friendly journey. Striking a balance between simplicity and information richness, our design optimizes accessibility and encourages an immersive learning environment. Elevate your educational journey with a thoughtfully crafted interface that prioritizes user experience and fosters a seamless connection between learners and content.</p>
+                        <p className="text-justify">Transforming the online learning experience, our UI/UX design for online courses embraces a card-based layout, seamlessly blending aesthetic appeal with intuitive navigation. Each card serves as a visual gateway to engaging course content, ensuring a user-friendly journey. Striking a balance between simplicity and information richness, our design optimizes accessibility and encourages an immersive learning environment. Elevate your educational journey with a thoughtfully crafted interface that prioritizes user experience and fosters a seamless connection between learners and content.</p>
                         <div className="d-flex align-items-center">
                             <h5 className="text-muted ">Certificate Assign with</h5>
                             {/* <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" />
@@ -87,7 +87,7 @@ export default function UIUX() {
                             <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
                                 <div className="card-body">
                                     <h5 className="card-title">Promising Career in UI/UX Design</h5>
-                                    <p className="card-text">Develop a lucrative career in the UI/UX Design domain, which boasts some of the highest-paying IT job roles</p>
+                                    <p className="card-text text-justify">Develop a lucrative career in the UI/UX Design domain, which boasts some of the highest-paying IT job roles</p>
 
                                 </div>
                             </div>
@@ -99,7 +99,7 @@ export default function UIUX() {
                                 <div className="card-body" style={{ height: "196px" }}>
                                     <h5 className="card-title">Caltech Campus Visit Event</h5>
 
-                                    <p className="card-text">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
+                                    <p className="card-text text-justify">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
 
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ export default function UIUX() {
                             <div className="card ml-2" style={{ width: "20rem", borderBottom: "5px solid#289bde" }}>
                                 <div className="card-body" style={{ height: "196px" }}>
                                     <h5 className="card-title">Caltech&apos;s Academic Excellence</h5>
-                                    <p className="card-text">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
+                                    <p className="card-text text-justify">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
 
                                 </div>
                             </div>

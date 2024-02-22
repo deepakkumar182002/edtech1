@@ -40,13 +40,13 @@ export default function Cybersecurity() {
         <>
             <div className="container">
                 <NavLink to="/" className="text-muted">Home&gt;</NavLink>
-                <NavLink to="/Cybersecurity" className="text-muted">Cyber Security</NavLink>
+                <NavLink to="/graphicsdesign" className="text-muted">Graphics Design</NavLink>
                 <div className="row d-flex">
                     <div className="col">
                         {/* <img src={logo} alt="" className="logo h-20 w-10 my-3" /> */}
-                        <h1>Certification in Cyber Security</h1>
+                        <h1>Certification in Graphics Design</h1>
                         <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
-                       <p className="text-justify">Ensuring the cyber security of online courses is paramount in safeguarding sensitive information. Robust encryption protocols and secure payment gateways are implemented to protect users&apos; card details. Regular system audits and vulnerability assessments are conducted to fortify defenses against potential threats. Additionally, user authentication measures such as two-factor authentication are employed to prevent unauthorized access. Continuous monitoring and rapid response mechanisms further bolster the overall cyber resilience, instilling confidence in learners regarding the safety of their financial transactions and personal data during their online educational journey.</p>
+                       <p className="text-justify">Elevate your online courses with captivating graphics designed to engage and inspire. Our expert graphic designers blend creativity with functionality to create visually stunning and informative course cards. From eye-catching imagery to sleek typography, each element is carefully crafted to enhance the overall learning experience. Stand out in the crowded digital landscape and leave a lasting impression on your audience with our bespoke graphics tailored to your online course content. Transform your course cards into dynamic visual assets that reflect the quality of your educational offerings.</p>
                        <div className="d-flex align-items-center">
                             <h5 className="text-muted ">Certificate Assign with </h5>
                         </div>
@@ -84,8 +84,8 @@ export default function Cybersecurity() {
                             <GrCertificate style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                             <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
                                 <div className="card-body" style={{ height: "180px" }}>
-                                    <h5 className="card-title">Promising Career in Cyber Security</h5>
-                                    <p className="card-text text-justify">Develop a lucrative career in the Cyber Security domain, which boasts some of the highest-paying IT job roles</p>
+                                    <h5 className="card-title">Promising Career in Graphics Design</h5>
+                                    <p className="card-text text-justify">Develop a lucrative career in the Graphis Design domain, which boasts some of the highest-paying IT job roles</p>
 
                                 </div>
                             </div>

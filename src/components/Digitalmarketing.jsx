@@ -46,7 +46,7 @@ export default function Digitalmarketing() {
                         {/* <img src={logo} alt="" className="logo h-20 w-10 my-3" /> */}
                         <h1>Certification in Digital Marketing</h1>
                         <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
-                        <p>Unlock boundless knowledge with our cutting-edge online courses! Elevate your skills and career prospects through interactive lessons, expert-led webinars, and engaging content. Our digital platform offers a seamless learning experience, tailored to your pace and preferences. Dive into diverse subjects, from business to technology, and gain a competitive edge. Join a vibrant community of learners and embark on a transformative educational journey. Start your success story today with our online courses  where knowledge meets convenience, and excellence is just a click away!</p>
+                        <p className="text-justify">Unlock boundless knowledge with our cutting-edge online courses! Elevate your skills and career prospects through interactive lessons, expert-led webinars, and engaging content. Our digital platform offers a seamless learning experience, tailored to your pace and preferences. Dive into diverse subjects, from business to technology, and gain a competitive edge. Join a vibrant community of learners and embark on a transformative educational journey. Start your success story today with our online courses  where knowledge meets convenience, and excellence is just a click away!</p>
                         <div className="d-flex align-items-center">
                             <h5 className="text-muted ">Certificate Assign with </h5>
                             {/* <img src={compony} style={{ width: "30px", height: "50px" }} alt="" className="col" />
@@ -87,7 +87,7 @@ export default function Digitalmarketing() {
                             <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
                                 <div className="card-body">
                                     <h5 className="card-title">Promising Career in Digital Marketing</h5>
-                                    <p className="card-text">Develop a lucrative career in the cloud domain, which boasts some of the highest-paying IT job roles</p>
+                                    <p className="card-text text-justify">Develop a lucrative career in the cloud domain, which boasts some of the highest-paying IT job roles</p>
 
                                 </div>
                             </div>
@@ -99,7 +99,7 @@ export default function Digitalmarketing() {
                                 <div className="card-body" style={{ height: "170px" }}>
                                     <h5 className="card-title">Caltech Campus Visit Event</h5>
 
-                                    <p className="card-text">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
+                                    <p className="card-text text-justify">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
 
                                 </div>
                             </div>
@@ -109,7 +109,7 @@ export default function Digitalmarketing() {
                             <div className="card ml-2" style={{ width: "20rem", borderBottom: "5px solid#289bde" }}>
                                 <div className="card-body" style={{ height: "170px" }}>
                                     <h5 className="card-title">Caltech&apos;s Academic Excellence</h5>
-                                    <p className="card-text">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
+                                    <p className="card-text text-justify">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
 
                                 </div>
                             </div>

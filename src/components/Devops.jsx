@@ -40,13 +40,13 @@ export default function Cybersecurity() {
         <>
             <div className="container">
                 <NavLink to="/" className="text-muted">Home&gt;</NavLink>
-                <NavLink to="/Cybersecurity" className="text-muted">Cyber Security</NavLink>
+                <NavLink to="/devops" className="text-muted">DevOps</NavLink>
                 <div className="row d-flex">
                     <div className="col">
                         {/* <img src={logo} alt="" className="logo h-20 w-10 my-3" /> */}
-                        <h1>Certification in Cyber Security</h1>
+                        <h1>Certification in DevOps</h1>
                         <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
-                       <p className="text-justify">Ensuring the cyber security of online courses is paramount in safeguarding sensitive information. Robust encryption protocols and secure payment gateways are implemented to protect users&apos; card details. Regular system audits and vulnerability assessments are conducted to fortify defenses against potential threats. Additionally, user authentication measures such as two-factor authentication are employed to prevent unauthorized access. Continuous monitoring and rapid response mechanisms further bolster the overall cyber resilience, instilling confidence in learners regarding the safety of their financial transactions and personal data during their online educational journey.</p>
+                       <p className="text-justify">Discover the power of DevOps with our comprehensive online courses! Learn to seamlessly integrate development and operations, streamline workflows, and enhance collaboration within your team. Our expert-led modules cover key DevOps tools, practices, and methodologies, empowering you to automate processes, accelerate delivery, and improve overall efficiency. Stay ahead in the rapidly evolving tech landscape by mastering DevOps principles through our dynamic and interactive online courses. Elevate your skills and advance your career in the world of modern software development and IT operations.</p>
                        <div className="d-flex align-items-center">
                             <h5 className="text-muted ">Certificate Assign with </h5>
                         </div>
@@ -84,8 +84,8 @@ export default function Cybersecurity() {
                             <GrCertificate style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                             <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
                                 <div className="card-body" style={{ height: "180px" }}>
-                                    <h5 className="card-title">Promising Career in Cyber Security</h5>
-                                    <p className="card-text text-justify">Develop a lucrative career in the Cyber Security domain, which boasts some of the highest-paying IT job roles</p>
+                                    <h5 className="card-title">Promising Career in DevOps</h5>
+                                    <p className="card-text text-justify">Develop a lucrative career in the DevOps domain, which boasts some of the highest-paying IT job roles</p>
 
                                 </div>
                             </div>

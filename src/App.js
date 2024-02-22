@@ -11,6 +11,12 @@ import Cybersecurity from "./components/Cybersecurity";
 import Datascience from "./components/Datascience";
 import UIUX from "./components/UIUX";
 import Contactform from "./components/Contactform";
+import Iot from "./components/Iot";
+import Graphicsdesign from "./components/Graphicsdesign";
+import Drone from "./components/Drone";
+import Ai from "./components/Ai";
+import Operatingsys from "./components/Operatingsys";
+import DevOps from "./components/Devops";
 
 function App() {
   console.log(process.env.REACT_APP_MY_API);
@@ -33,6 +39,12 @@ function App() {
           <Route path="/Cybersecurity" element={<Cybersecurity />} />;
           <Route path="/Datascience" element={<Datascience />} />;
           <Route path="/UIUX" element={<UIUX />} />;
+          <Route path="/iot" element={<Iot />} />;
+          <Route path="/graphicsdesign" element={<Graphicsdesign />} />;
+          <Route path="/drone" element={<Drone />} />;
+          <Route path="/ai" element={<Ai />} />;
+          <Route path="/operatingsys" element={<Operatingsys />} />;
+          <Route path="/devops" element={<DevOps />} />;
           {/* <Route path="/explorecourses" element={<Courses />} /> */}
           {/* <Route path="/courses/:name" element={<Courses />} />
           <Route path="/courses/:name2" element={<Courses />} /> */}

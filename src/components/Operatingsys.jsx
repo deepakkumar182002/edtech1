@@ -1,5 +1,6 @@
 import React from "react";
 // import { useParams } from "react-router-dom";
+// import logo from "../img/compony4.png";
 import compony from "../img/compony.png";
 import compony2 from "../img/compony2.png";
 import compony3 from "../img/compony3.png";
@@ -19,36 +20,38 @@ import profileimg4 from "../img/profileimg4.png";
 import profileimg5 from "../img/profileimg5.png";
 import profileimg6 from "../img/profileimg6.png";
 import profileimg7 from "../img/profileimg7.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
-import couresTemplate from "../img/Rectangle 6-12.png";
-import "../App.css";
-import { NavLink,Link } from "react-router-dom";
-import { GrCertificate, GrGlobe } from "react-icons/gr";
-import { MdOutlineTouchApp } from "react-icons/md";
 import {
     FaLinkedin,
     FaInstagram,
     FaSquareXTwitter,
     FaSquareFacebook,
 } from "react-icons/fa6";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCircleChevronRight } from "@fortawesome/free-solid-svg-icons";
+import couresTemplate from "../img/Rectangle 6-12.png";
+import "../App.css";
+import { NavLink, Link } from "react-router-dom";
+import { GrCertificate, GrGlobe } from "react-icons/gr";
+import { MdOutlineTouchApp } from "react-icons/md";
 // import { CiGlobe } from "react-icons/ci";
-export default function Cybersecurity() {
+export default function Softwaredev() {
     // const CloudParam = useParams();
 
     return (
         <>
             <div className="container">
                 <NavLink to="/" className="text-muted">Home&gt;</NavLink>
-                <NavLink to="/Cybersecurity" className="text-muted">Cyber Security</NavLink>
+                <NavLink to="/operatingsys" className="text-muted">Operating System</NavLink>
                 <div className="row d-flex">
                     <div className="col">
                         {/* <img src={logo} alt="" className="logo h-20 w-10 my-3" /> */}
-                        <h1>Certification in Cyber Security</h1>
+                        <h1>Certification in Operating System</h1>
                         <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
-                       <p className="text-justify">Ensuring the cyber security of online courses is paramount in safeguarding sensitive information. Robust encryption protocols and secure payment gateways are implemented to protect users&apos; card details. Regular system audits and vulnerability assessments are conducted to fortify defenses against potential threats. Additionally, user authentication measures such as two-factor authentication are employed to prevent unauthorized access. Continuous monitoring and rapid response mechanisms further bolster the overall cyber resilience, instilling confidence in learners regarding the safety of their financial transactions and personal data during their online educational journey.</p>
-                       <div className="d-flex align-items-center">
+                        <p className="text-justify">Experience seamless online learning with our advanced operating system for courses. Our platform provides an intuitive interface, ensuring easy navigation and access to a diverse range of courses. Enjoy real-time collaboration, interactive content, and personalized learning paths. With robust features such as progress tracking, quizzes, and discussion forums, our operating system enhances the online education experience. Elevate your learning journey with a user-friendly, efficient, and dynamic platform designed for success in the digital classroom.</p>
+                        <div className="d-flex align-items-center">
                             <h5 className="text-muted ">Certificate Assign with </h5>
+                            {/* <img src={Logo2} style={{ width: "30px", height: "50px" }} alt="" className="col" /> */}
+                        
                         </div>
                         <div className="d-flex align-items-center my-4">
                             <button type="button" id="ApllyNowBtn" className="btn ">Apply Now</button>
@@ -80,40 +83,40 @@ export default function Cybersecurity() {
                     <h2 className="d-flex justify-content-center m-1 align-items-center" style={{ background: "#289bde", color: "#fff", height: "60px" }}>Why Join Program ?</h2>
                     <div className="row align-items-start justify-content-center">
 
-                        <div className="box" style={{ height: "200px" }}>
+                        <div className="box m-3" style={{ height: "200px" }}>
                             <GrCertificate style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                             <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
-                                <div className="card-body" style={{ height: "180px" }}>
-                                    <h5 className="card-title">Promising Career in Cyber Security</h5>
-                                    <p className="card-text text-justify">Develop a lucrative career in the Cyber Security domain, which boasts some of the highest-paying IT job roles</p>
+                                <div className="card-body">
+                                    <h5 className="card-title">Promising Career in Operating System</h5>
+                                    <p className="card-text text-justify">Develop a lucrative career in the Operating System, which boasts some of the highest-paying IT job roles</p>
 
                                 </div>
                             </div>
                         </div>
 
-                        <div className="box" style={{ height: "200px" }}>
+                        <div className="box m-3" style={{ height: "200px" }}>
                             <MdOutlineTouchApp style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                             <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
-                                <div className="card-body" style={{ height: "180px" }}>
-                                    <h5 className="card-title">Caltech Campus Visit Event</h5>
+                                <div className="card-body" style={{ height: "196px" }}>
+                                    <h5 className="card-title" >Caltech Campus Visit Event</h5>
 
                                     <p className="card-text text-justify">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
 
+
                                 </div>
                             </div>
                         </div>
-                        <div className="box" style={{ height: "200px" }}>
+                        <div className="box m-3" style={{ height: "200px" }}>
                             <GrGlobe style={{ fontSize: "2rem", color: "#289bde", position: "relative", top: "20px", left: "20px", zIndex: "1" }} />
                             <div className="card ml-2" style={{ width: "20rem", borderBottom: "5px solid#289bde" }}>
-                                <div className="card-body" style={{ height: "180px" }}>
+                                <div className="card-body" style={{ height: "195px" }}>
                                     <h5 className="card-title">Caltech&apos;s Academic Excellence</h5>
                                     <p className="card-text text-justify">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
-
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div className="col ">
+                    <div className="col">
                         <h2 className="text-center my-5">Top Componies Hiring</h2>
                         <div className="row d-flex align-items-center justify-content-center" style={{ background: "#e5f7f9d9", borderRadius: "10px" }}>
                         <img src={compony}  style={{height:"100px",width:"150px"}} className="pt-3 m-3" alt="" />
@@ -124,6 +127,7 @@ export default function Cybersecurity() {
                         <img src={compony6} style={{height:"100px",width:"150px"}} className="pt-3 m-3" alt="" />
                         </div>
                     </div>
+
                 </div>
                 {/* same home data */}
                 <div className="meet-students my-5">

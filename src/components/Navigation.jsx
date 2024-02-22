@@ -44,17 +44,17 @@ export default function Navigation(Props) {
                       <Link className="dropdown-item" to="/Cybersecurity">Cyber Security</Link>
                       <Link className="dropdown-item" to="/Datascience">Data Science</Link>
                       <Link className="dropdown-item" to="/UIUX">UI & UX Design</Link>
-                      <Link className="dropdown-item" to="/">IOT / Embedded</Link>
-                      <Link className="dropdown-item" to="/">Graphics Design</Link>
-                      <Link className="dropdown-item" to="/">Drone Technology</Link>
+                      <Link className="dropdown-item" to="/iot">IOT / Embedded</Link>
+                      <Link className="dropdown-item" to="/graphicsDesign">Graphics Design</Link>
+                      <Link className="dropdown-item" to="/drone">Drone Technology</Link>
                       {/* <Link type="button" className="btn m-4" to="/explorecourses">More Courses</Link> */}
                     </li>
                     <li className="box col">
                       <div className="box">
                         
-                      <Link className="dropdown-item" to="/">AI & Machine Learning</Link>
-                      <Link className="dropdown-item" to="/">Operating System</Link>
-                      <Link className="dropdown-item" to="/">DevOps</Link>
+                      <Link className="dropdown-item" to="/ai">AI & Machine Learning</Link>
+                      <Link className="dropdown-item" to="/operatingsys">Operating System</Link>
+                      <Link className="dropdown-item" to="/devops">DevOps</Link>
 
                       </div>
                     </li>

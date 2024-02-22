@@ -47,7 +47,7 @@ export default function Softwaredev() {
                         {/* <img src={logo} alt="" className="logo h-20 w-10 my-3" /> */}
                         <h1>Certification in Software development</h1>
                         <p className="text" style={{ color: "#289bde" }}>If you are a fresher then enroll now.</p>
-                        <p>Embark on a transformative journey with our Software Development Course! Dive into a comprehensive program designed to equip you with the skills needed to thrive in the dynamic world of software development. From mastering programming languages to understanding industry best practices, our course offers hands-on experience and expert guidance. Elevate your career prospects by enrolling today and unlocking a world of opportunities in the rapidly evolving field of software development. Your future in tech starts here!</p>
+                        <p className="text-justify">Embark on a transformative journey with our Software Development Course! Dive into a comprehensive program designed to equip you with the skills needed to thrive in the dynamic world of software development. From mastering programming languages to understanding industry best practices, our course offers hands-on experience and expert guidance. Elevate your career prospects by enrolling today and unlocking a world of opportunities in the rapidly evolving field of software development. Your future in tech starts here!</p>
                         <div className="d-flex align-items-center">
                             <h5 className="text-muted ">Certificate Assign with </h5>
                             {/* <img src={Logo2} style={{ width: "30px", height: "50px" }} alt="" className="col" /> */}
@@ -88,7 +88,7 @@ export default function Softwaredev() {
                             <div className="card ml-2" style={{ width: "19rem", borderBottom: "5px solid#289bde" }}>
                                 <div className="card-body">
                                     <h5 className="card-title">Promising Career in Software development</h5>
-                                    <p className="card-text">Develop a lucrative career in the software development, which boasts some of the highest-paying IT job roles</p>
+                                    <p className="card-text text-justify">Develop a lucrative career in the software development, which boasts some of the highest-paying IT job roles</p>
 
                                 </div>
                             </div>
@@ -100,7 +100,7 @@ export default function Softwaredev() {
                                 <div className="card-body" style={{ height: "196px" }}>
                                     <h5 className="card-title" >Caltech Campus Visit Event</h5>
 
-                                    <p className="card-text">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
+                                    <p className="card-text text-justify">Get invited to an exclusive Campus Visit to connect with peers & Caltech leadership</p>
 
 
                                 </div>
@@ -111,7 +111,7 @@ export default function Softwaredev() {
                             <div className="card ml-2" style={{ width: "20rem", borderBottom: "5px solid#289bde" }}>
                                 <div className="card-body" style={{ height: "195px" }}>
                                     <h5 className="card-title">Caltech&apos;s Academic Excellence</h5>
-                                    <p className="card-text">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
+                                    <p className="card-text text-justify">Earn a program certificate, CTME Circle membership and up to 15 CEUs from Caltech CTME</p>
                                 </div>
                             </div>
                         </div>
