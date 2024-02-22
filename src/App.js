@@ -17,6 +17,8 @@ import Drone from "./components/Drone";
 import Ai from "./components/Ai";
 import Operatingsys from "./components/Operatingsys";
 import DevOps from "./components/Devops";
+import About from "./components/About";
+import Success from "./components/Success";
 
 function App() {
   console.log(process.env.REACT_APP_MY_API);
@@ -31,6 +33,8 @@ function App() {
           {/* <Route path="/*" element={<Page404 />} /> */}
           <Route path="/" element={<Home />} />;
           <Route path="/contact" element={<Contactform />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/success" element={<Success />} />
 
           <Route path="/explorecourses" element={<ExploreCourses />} />
           <Route path="/Softwaredev" element={<Softwaredev />} />;
