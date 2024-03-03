@@ -89,13 +89,14 @@ export default function Navigation(Props) {
               </li>
               <form className="form-inline my-2 my-lg-0"></form>
             </ul>
-            <button
-              className="btn btn-outline-success my-sm-0"
+            <Link
+            to='/contact'
+              className="btn btn my-sm-0"
               type="submit"
               style={{ marginLeft: "400px" }}
             >
               Register
-            </button>
+            </Link>
           </div>
         </nav>
       </div>
