@@ -1,5 +1,5 @@
 import React from "react";
-import ExploreCourses from "./components/ExploreCourses";
+// import ExploreCourses from "./components/ExploreCourses";
 import Navigation from "./components/Navigation";
 import Home from "./components/Home2";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -25,7 +25,10 @@ function App() {
   return (
     <div>
       <BrowserRouter>
-        <Navigation />
+        <Navigation/>
+        <br />
+        <br />
+        <br />
         {/* <Contents /> */}
         {/* <ExploreCourses /> */}
         <Routes>
@@ -36,7 +39,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/success" element={<Success />} />
 
-          <Route path="/explorecourses" element={<ExploreCourses />} />
+          {/* <Route path="/explorecourses" element={<ExploreCourses />} /> */}
           <Route path="/Softwaredev" element={<Softwaredev />} />;
           <Route path="/Cloudcomputing" element={<Cloudcmp />} />;
           <Route path="/Digitalmarketing" element={<Digitalmarketing />} />;

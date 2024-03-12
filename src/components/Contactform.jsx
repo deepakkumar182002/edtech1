@@ -1,5 +1,6 @@
 import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
+import { FaPhone } from "react-icons/fa";
 // import { CiCircleRemove } from "react-icons/ci";
 
 
@@ -31,11 +32,12 @@ export default function Contactform() {
     <>
       <div className="box d-flex justify-content-center">
         <div className="request-callback-container" style={{boxShadow:"10px 10px 50px 0px #969696c2"}}>
-          <div className="header-text p-3 d-flex" style={{ background: "#289bde", color: "#fff", justifyContent: "space-between" }}>
+          <div className="header-text p-4 d-flex" style={{ background: "#289bde", color: "#fff", justifyContent: "space-between" }}>
             <span>
               <h2>Request Callback</h2>
               <h6>Fill out this form below!</h6>
             </span>
+            <FaPhone style={{fontSize:"2rem",width:"50px",height:"50px", borderRadius:"50%",background:"#fff",color:"#289bde",padding:"10px"}} />
             {/* <CiCircleRemove id="remove-btn" style={{ fontSize: "30px" }} /> */}
           </div>
           <form onSubmit={handleFormSubmit} className="d-flex align-items-center " style={{ display: "flex", flexDirection: "column", width: "100%" }}>
@@ -68,7 +70,7 @@ export default function Contactform() {
               field="Phone"
               errors={state.errors}
             />
-            <label htmlFor="course" className="text text-start" style={{ fontWeight: "500" }}>Course Interest*</label>
+            <label htmlFor="course" className="text text-start" style={{ fontWeight: "500" }}>Course Interested in*</label>
             <select name="course" id="course" className="p-2" style={{ width: "80%" }}>
               <option >Select Course</option>
               <option value="Data Science">Data Science</option>

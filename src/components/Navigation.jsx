@@ -5,11 +5,14 @@ import "../App.css";
 export default function Navigation(Props) {
   return (
     <>
-      <div className="container-fluid">
+      <div className="container-fluid"    style={{position:"fixed", zIndex:"1000",background:"#fff",marginTop:"-5px"}}>
         <nav className={`navbar navbar-expand-lg navbar-light bg-${Props.btncolor}`}>
           <NavLink className="navbar-brand fs-2 d-flex row" to="/">
             <img className="mainlogo"src={logo2} height={40} width={40} alt="" />
-            <b className="p-1 mx-2 logotext"> StarLink</b>
+            <div className="logoText pl-2 pt-1">
+            <b className=" logotext" style={{fontWeight:"500"}}>Starlink</b>
+            <b className="pl-2" style={{fontWeight:"300"}}><i>IT Solutions</i></b>
+            </div>
           </NavLink>
           <button
             className="navbar-toggler"

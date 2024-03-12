@@ -10,7 +10,6 @@ export default function Carousel() {
   return (
     <React.Fragment>
       <div className="container-fluid my-1">
-
         <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
           <ol className="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
@@ -23,13 +22,13 @@ export default function Carousel() {
                 <h1>India&apos;s Best Learning Platform</h1>
                 <p>...</p>
               </div>
-              <img className="d-block w-100 " style={{ opacity: "50%", height: "600px" }} src={poster1} alt="First slide" />
+              <img className="d-block w-100 " style={{ opacity: "50%",width:"100%", height:"auto" }} src={poster1} alt="First slide" />
             </div>
             <div className="carousel-item" style={{ background: "black" }}>
-              <img className="d-block w-100" style={{ opacity: "50%", height: "600px" }} src={poster2} alt="Second slide" />
+              <img className="d-block w-100" style={{ opacity: "50%", width:"100%", height:"auto"}} src={poster2} alt="Second slide" />
             </div>
             <div className="carousel-item" style={{ background: "black" }}>
-              <img className="d-block w-100" style={{ opacity: "50%", height: "600px" }} src={poster3} alt="Third slide" />
+              <img className="d-block w-100" style={{ opacity: "50%",width:"100%", height:"auto" }} src={poster3} alt="Third slide" />
             </div>
           </div>
           <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">

@@ -3,11 +3,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px;
+}
 body {
   margin: 0;
   padding: 0;
   background: rgb(248 249 250);
   overflow-x: hidden;
+  
 }
 
 /* NavLink color and hover effect */
@@ -231,6 +236,12 @@ li{
   color:#289bde ;
   background: #fff;
   border-radius: 50%;
+}
+.course-template:hover{
+  scale: 105%;
+  border-radius: 20px;
+  transition: 0.5s;
+  cursor: pointer;
 }
 
 /* for About component */

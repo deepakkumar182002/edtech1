@@ -855,9 +855,9 @@ export default function Home() {
 
                     <div className="footer-title-name-box" style={{ background: "", padding: "20px", position: "relative", width: "auto" }}>
                         <h1 className="text ">Ed Tech</h1>
-                        <p className="footer-text">Ed Tech Pvt ltd, Noida, Delhi, India Lorem ipsum dolor sit</p>
+                        <p className="footer-text">31A/206, Shiv Nagar,Rajpur Chungi</p>
                         <p className="footer-text">India, Uttar Pradesh Agra (282007) </p>
-                        <p className="footer-text">Privacy Policy | Tearm of use |</p>
+                        <p className="footer-text"><FaPhoneAlt />Contact Us</p>
                     </div>
 
                     <div className="Footer-All-Links d-flex flex-row p-3 mx-3" style={{ position: "relative" }}>
