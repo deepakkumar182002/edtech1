@@ -36,7 +36,7 @@ import { useLocation } from "react-router-dom";
 import Footer from "./Footer";
 import StudentsIonfo from "./StudentsIonfo";
 import { IoLogoWhatsapp } from "react-icons/io";
-import Chatbot from "./Chatbot";
+import Chatbot2 from "./Chatbot";
 
 const customStyles = {
     content: {
@@ -695,7 +695,7 @@ export default function Home() {
                 </div>
                 <Footer />
                 <div className="chatbot" style={{position:"relative",zIndex:"1"}}>
-                <Chatbot />
+                <Chatbot2 />
                 </div>
                 <div className="fixed-bottom right-140" style={{left:"initial",marginBottom:"90px",marginRight:"30px",zIndex:"0"}}>
                     <a href="https://wa.me/8273243959?text=Hello, How can I help you?" target="_blank" rel="noreferrer">
