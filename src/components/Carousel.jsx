@@ -1,7 +1,7 @@
 import React from "react";
-import poster1 from "../img/poster1.png";
-import poster2 from "../img/poster2.png";
-import poster3 from "../img/poster3.png";
+import poster1 from "../img/Computer-Science-Class.png";
+import poster2 from "../img/covid-education-teaser-social_0.jpg";
+import poster3 from "../img/google-meet.png";
 import "../App.css";
 // import { Link } from "react-router-dom";
 
