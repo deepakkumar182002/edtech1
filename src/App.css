@@ -115,6 +115,7 @@ li .nav-NavLink {
     font-size: 5px;
 
   }
+ 
 }
 
 @media screen and (max-width: 760px) {
@@ -128,6 +129,8 @@ li .nav-NavLink {
   } */
   .request-callback-container{
     scale: 50%;
+    margin-top: -150px;
+    color: #ffffffaf;
   }
   img {
     position: relative;
@@ -138,6 +141,14 @@ li .nav-NavLink {
   }
   .footer-title-name-box{
     text-align: center;
+  }
+  .contact-form{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+  .contact-stdinfo{
+    margin-top: -200px;
   }
 }
 

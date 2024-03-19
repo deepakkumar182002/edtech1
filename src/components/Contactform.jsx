@@ -2,7 +2,10 @@ import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import { FaPhone } from "react-icons/fa";
 // import { CiCircleRemove } from "react-icons/ci";
-
+import contactposter from "../img/contact-poster.jpg";
+import StudentsIonfo from "./StudentsIonfo";
+import Footer from "./Footer";
+import { NavLink } from "react-router-dom";
 
 export default function Contactform() {
 
@@ -30,8 +33,11 @@ export default function Contactform() {
 
   return (
     <>
-      <div className="box d-flex justify-content-center">
-        <div className="request-callback-container" style={{boxShadow:"10px 10px 50px 0px #969696c2"}}>
+    <img src={contactposter} alt="" style={{position:"absolute",zIndex:"0",backgroundPosition:"center",backgroundSize:"cover",width:"100%",filter: "blur(3px)",marginTop:"-20px"}} />
+      <NavLink style={{zIndex:"2",position:"absolute",marginLeft:"10px",color:"#fff",float:"left"}} to="/" className="text">Home&gt;</NavLink>
+      <NavLink style={{zIndex:"2",position:"absolute",marginLeft:"62px",color:"#fff",float:"left"}} to="/contact" className="text">Contact</NavLink>
+      <div className="box d-flex flex-row-reverse " style={{marginRight:"50px",position:"relative",zIndex:"1"}}>
+        <div className="request-callback-container" style={{boxShadow:"10px 10px 50px 0px #969696c2",position:"relative",zIndex:"110",background:"#ffffffaf"}}>
           <div className="header-text p-4 d-flex" style={{ background: "#289bde", color: "#fff", justifyContent: "space-between" }}>
             <span>
               <h2>Request Callback</h2>
@@ -70,7 +76,7 @@ export default function Contactform() {
               field="Phone"
               errors={state.errors}
             />
-            <label htmlFor="course" className="text text-start" style={{ fontWeight: "500" }}>Course Interested in*</label>
+            <label htmlFor="course" className="text-muted text-start" style={{ fontWeight: "500" }}>Course Interested in*</label>
             <select name="course" id="course" className="p-2" style={{ width: "80%" }}>
               <option >Select Course</option>
               <option value="Data Science">Data Science</option>
@@ -83,7 +89,7 @@ export default function Contactform() {
               field="Course"
               errors={state.errors}
             />
-            <label htmlFor="course" className="text text-start " style={{ fontWeight: "500" }}>Message</label>
+            <label htmlFor="course" className="text-muted text-start " style={{ fontWeight: "500" }}>Message</label>
             <textarea
               id="message"
               name="message"
@@ -106,8 +112,16 @@ export default function Contactform() {
 
           </form>
         </div>
-      </div>
 
+      </div>
+      <br />
+      <br />
+      
+    <div className="contact-stdinfo" style={{position:"relative", zIndex:"200",background:"#fafafa",width:"100%",height:"auto"}}>
+      <br />
+        <StudentsIonfo />
+    </div>
+      <Footer />
     </>
   );
 }

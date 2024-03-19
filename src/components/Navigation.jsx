@@ -80,11 +80,11 @@ export default function Navigation(Props) {
                   About
                 </NavLink>
               </li>
-              <li className="nav-item mx-3">
+              {/* <li className="nav-item mx-3">
                 <NavLink className="nav-NavLink" to="/Success">
                   Success
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item mx-3">
                 <NavLink className="nav-NavLink" to="/contact">
                   Contact

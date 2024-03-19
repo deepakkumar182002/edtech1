@@ -7,6 +7,7 @@ import meetStudent from "../img/googleMt.png";
 import { GrAchievement } from "react-icons/gr";
 import { TiGlobe } from "react-icons/ti";
 import Footer from "./Footer";
+import StudentsIonfo from "./StudentsIonfo";
 
 const About = () => {
   return (
@@ -74,6 +75,7 @@ const About = () => {
            <p>Together, let&apos;s build the future.</p>
            <Link to="/contact" type="button" id="ApllyNowBtn" className="btn ">Apply Now</Link>
         </div>
+        <StudentsIonfo />
       </div>
         <Footer/>
     </>

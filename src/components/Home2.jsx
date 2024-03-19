@@ -27,6 +27,7 @@ import { Link } from "react-router-dom";
 import {
     FaCalendar
 } from "react-icons/fa6";
+
 import Carousel from "./Carousel";
 import { useForm, ValidationError } from "@formspree/react";
 import { CiCircleRemove } from "react-icons/ci";
@@ -34,6 +35,8 @@ import Modal from "react-modal";
 import { useLocation } from "react-router-dom";
 import Footer from "./Footer";
 import StudentsIonfo from "./StudentsIonfo";
+import { IoLogoWhatsapp } from "react-icons/io";
+import Chatbot from "./Chatbot";
 
 const customStyles = {
     content: {
@@ -47,6 +50,7 @@ const customStyles = {
         height: "600px",
         position:"relative",
         zIndex:"100",
+        background:"transparent",
         border: "1px solid #abababd9",
         boxShadow: "0 0 40px 5px #abababd9",
     },
@@ -109,7 +113,7 @@ export default function Home() {
                     shouldCloseOnEsc={false}
                 >
                     <div className="box d-flex justify-content-center" style={{ position: "relative", zIndex: "100" }}>
-                        <div className="request-callback-container">
+                        <div className="request-callback-container" style={{background:"#fafafa"}}>
                             <div className="header-text p-3 d-flex" style={{ background: "#289bde", color: "#fff", justifyContent: "space-between" }}>
                                 <span>
                                     <h2>Request Callback</h2>
@@ -690,6 +694,14 @@ export default function Home() {
                     </div>
                 </div>
                 <Footer />
+                <div className="chatbot" style={{position:"relative",zIndex:"1"}}>
+                <Chatbot />
+                </div>
+                <div className="fixed-bottom right-140" style={{left:"initial",marginBottom:"90px",marginRight:"30px",zIndex:"0"}}>
+                    <a href="https://wa.me/8273243959?text=Hello, How can I help you?" target="_blank" rel="noreferrer">
+                    <IoLogoWhatsapp style={{fontSize:"4rem",color:"#40ff00"}} />
+                    </a>
+                </div>
 
             </React.Fragment>
         </>
